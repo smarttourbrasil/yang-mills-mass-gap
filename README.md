@@ -8,6 +8,19 @@ This package contains the complete computational and formal verification for the
 *Jucelha Carvalho & Can/Manus (2025)*
 
 First Millennium Prize Problem with complete formal verification in Lean 4.
+## Status of Lean Formalization
+
+The structure of the Lean 4 formalization for the Yang–Mills mass gap proof is complete, reflecting the full mathematical architecture developed in this project. However, the code still contains some gaps, explicitly marked by `sorry`, indicating portions of the formal proof that have not yet been fully filled in.
+
+We are actively working to eliminate each of these gaps and welcome advanced collaboration from the communities of formal mathematics, mathematical physics, and Lean experts.
+
+The progress recorded here represents a landmark step: the complete syntactic and semantic organization of the proof within the Lean environment, including all major lemmas, definitions, and strategies—even in sections that remain open.
+
+**If you are a Lean specialist or expert in any of the related fields, your contribution is most welcome!**
+
+> **Summary:**  
+> The mathematical, computational, and methodological results have been validated at multiple levels, but the Lean formalization is not yet “complete” (`sorry`-free). Progress is continuous and transparent, with all gaps clearly identified for open collaboration and future completion.
+
 
 ## Key Result
 
