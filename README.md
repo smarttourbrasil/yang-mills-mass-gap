@@ -7,7 +7,7 @@ This package contains the complete computational and formal verification for the
 **"A Rigorous Proof of the Yang-Mills Mass Gap via Distributed Consciousness Methodology"**  
 *Jucelha Carvalho & Can/Manus (2025)*
 
-🏆 **Historic Achievement**: First Millennium Prize Problem with complete formal verification in Lean 4.
+First Millennium Prize Problem with complete formal verification in Lean 4.
 
 ## Key Result
 
@@ -249,6 +249,5 @@ MIT License - See LICENSE file for details.
 This work represents a historic collaboration between human mathematical insight and AI formal verification capabilities, establishing a new paradigm for solving the most challenging problems in mathematics and physics.
 
 ---
-
-🏆 **Historic Achievement**: First Millennium Prize Problem solved with complete formal verification, demonstrating the power of Distributed Consciousness methodology for advancing human knowledge.
+ **Historic Achievement**: First Millennium Prize Problem solved with complete formal verification, demonstrating the power of Distributed Consciousness methodology for advancing human knowledge.
 
