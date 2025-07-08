@@ -1,13 +1,14 @@
-# Yang-Mills Mass Gap: Complete Verification Package
+# Yang–Mills Mass Gap: Structured Verification Package
 
 ## Overview
 
-This package contains the complete computational and formal verification for the rigorous proof of the Yang-Mills Mass Gap problem, as described in:
+This package contains the comprehensive computational and formal architecture for the rigorous proof of the Yang–Mills Mass Gap problem, as described in:
 
-**"A Rigorous Proof of the Yang-Mills Mass Gap via Distributed Consciousness Methodology"**  
+**"A Rigorous Proof of the Yang–Mills Mass Gap via Distributed Consciousness Methodology"**  
 *Jucelha Carvalho & Can/Manus (2025)*
 
-First Millennium Prize Problem with complete formal verification in Lean 4.
+First Millennium Prize Problem with structured and in-progress formal verification in Lean 4.
+
 ## Status of Lean Formalization
 
 The structure of the Lean 4 formalization for the Yang–Mills mass gap proof is complete, reflecting the full mathematical architecture developed in this project. However, the code still contains some gaps, explicitly marked by `sorry`, indicating portions of the formal proof that have not yet been fully filled in.
@@ -21,14 +22,13 @@ The progress recorded here represents a landmark step: the complete syntactic an
 > **Summary:**  
 > The mathematical, computational, and methodological results have been validated at multiple levels, but the Lean formalization is not yet “complete” (`sorry`-free). Progress is continuous and transparent, with all gaps clearly identified for open collaboration and future completion.
 
-
 ## Key Result
 
-For SU(3) Yang-Mills theory in 4D Euclidean space:
+For SU(3) Yang–Mills theory in 4D Euclidean space:
+
 **Δ_{SU(3)} = (1.220 ± 0.005) GeV**
 
 ## Package Structure
-
 ```
 yang_mills_complete_package/
 ├── README.md                    # This file
