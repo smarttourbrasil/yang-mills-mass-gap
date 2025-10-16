@@ -99,6 +99,15 @@ def su3_from_algebra(theta):
     return U
 
 def load_configuration(filename):
+    # Try ILDG loader first
+    try:
+        from ildg_loader import load_ildg_format
+        return load_ildg_format(filename)
+    except Exception as e:
+        print(f"ILDG loader failed: {e}, trying fallback...")
+        # Fallback to original logic
+        pass
+    
     """
     Carrega configuração de gauge
     """
