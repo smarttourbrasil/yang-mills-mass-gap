@@ -463,3 +463,25 @@ but by the judgment of the mathematical physics community."*
 
 </div>
 
+
+## 🔄 Recent Updates (October 2025)
+
+### Axiom 1 → Theorem (In Progress)
+
+Following the successful transformation of Axiom 2, we are now working on **Axiom 1 (BRST Measure Existence)**.
+
+**Progress:**
+- ✅ **Lemma M5 (BRST Cohomology)** formalized in Lean 4 (200 lines)
+- 🔄 Lemmata M1, M3, M4 planned (2-4 weeks)
+- 📚 Literature review complete (50+ references)
+- 🎯 Target: Axiom 1 → Conditional Theorem
+
+**Files:**
+- `YangMills/Gap1/BRSTMeasure/M5_BRSTCohomology.lean`
+
+**Key References:**
+- Kugo & Ojima (1979) - BRST cohomology
+- Henneaux & Teitelboim (1992) - Gauge systems quantization
+- Osterwalder-Schrader (1973/75) - Rigorous QFT axioms
+- Uhlenbeck (1982) - Compactness of gauge connections
+
