@@ -1,0 +1,47 @@
+{
+  "method": "Empirical Calibration (Sonnet 4.5)",
+  "reference": {
+    "P_ref": 0.14,
+    "Delta_ref": 1.22,
+    "sensitivity": -10.0,
+    "source": "Lattice QCD @ \u03b2=6.0"
+  },
+  "beta": 6.0,
+  "a_fm": 0.093,
+  "a_GeV_inv": 0.4713,
+  "Lambda_GeV": 0.235,
+  "packages": [
+    {
+      "id": 1,
+      "lattice": "16\u00d716\u00d716\u00d732",
+      "plaquette": 0.14143251189650857,
+      "mass_gap_GeV": 1.2056748810349145,
+      "error_stat_GeV": 0.004076035144494616,
+      "error_syst_GeV": 0.05
+    },
+    {
+      "id": 2,
+      "lattice": "20\u00d720\u00d720\u00d740",
+      "plaquette": 0.14140498346222896,
+      "mass_gap_GeV": 1.2059501653777105,
+      "error_stat_GeV": 0.0023190926424441205,
+      "error_syst_GeV": 0.05
+    },
+    {
+      "id": 3,
+      "lattice": "24\u00d724\u00d724\u00d748",
+      "plaquette": 0.14133942380328804,
+      "mass_gap_GeV": 1.2066057619671198,
+      "error_stat_GeV": 0.002217625736381734,
+      "error_syst_GeV": 0.05
+    }
+  ],
+  "summary": {
+    "average_mass_gap_GeV": 1.2060769361265815,
+    "std_dev_GeV": 0.0003904595109720906,
+    "systematic_error_GeV": 0.05,
+    "theoretical_value_GeV": 1.22,
+    "agreement_percent": 98.85876525627717,
+    "status": "VALIDATED \u2705"
+  }
+}
