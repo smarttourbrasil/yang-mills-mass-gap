@@ -411,7 +411,7 @@ See [LICENSE](LICENSE) for full terms.
 
 **Jucelha Carvalho**  
 Smart Tour Brasil  
-Email: jucelha@smarttourbrasil.com  
+Email: jucelha@smarttourbrasil.com.br  
 CNPJ: 23.804.653/0001-29
 
 **AI Collaborators:**  
