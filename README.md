@@ -4,7 +4,7 @@
 [![License](https://img.shields.io/badge/license-Apache%202.0-green)](LICENSE)
 [![UN Tourism](https://img.shields.io/badge/UN%20Tourism-Global%20Finalist%202025-gold)](https://www.untourism.int/challenges/artificial-intelligence-challenge)
 [![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](https://github.com/smarttourbrasil/yang-mills-mass-gap)
-[![Paper](https://img.shields.io/badge/paper-PDF-red)](Yang_Mills_Mass_Gap_by_Distributed_Consciousness.pdf)
+[![Paper](https://img.shields.io/badge/paper-PDF-red)](A_Formal_Verification_Framework_for_the_Yang-Mills_Mass_Gap_Distributed_Consciousness_Methodology_and_Lean_4_Implementation_V3.pdf)
 [![Validation](https://img.shields.io/badge/validation-98.9%25-success)](validation_results/)
 
 > **A complete formal verification framework for the Yang-Mills Mass Gap problem, achieved through distributed AI collaboration using the Consensus Framework methodology.**
