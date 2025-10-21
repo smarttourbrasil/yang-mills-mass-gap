@@ -3,11 +3,17 @@
 # **A Formal Verification Framework for the Yang-Mills Mass Gap: Distributed Consciousness Methodology and Lean 4 Implementation**
 
 **Authors:**
-- Jucelha Carvalho (Lead Researcher & Coordinator)
-- Manus AI 1.5
-- Claude Sonnet 4.5
-- Claude Opus 4.1
-- GPT-5
+- **Jucelha Carvalho** [![ORCID](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0009-0004-6047-2306) (Lead Researcher & Coordinator, Smart Tour Brasil LTDA)
+- **Manus AI 1.5** (DevOps & Formal Verification)
+- **Claude Sonnet 4.5** (Implementation Engineer, Anthropic)
+- **Claude Opus 4.1** (Advanced Insights & Computational Architecture, Anthropic)
+- **GPT-5** (Scientific Research & Theoretical Framework, OpenAI)
+
+**Contact**: jucelha@smarttourbrasil.com.br
+
+**Code Repository**: https://github.com/smarttourbrasil/yang-mills-mass-gap  
+**Zenodo DOI**: https://doi.org/10.5281/zenodo.17397623  
+**ORCID (Jucelha Carvalho)**: https://orcid.org/0009-0004-6047-2306
 
 **Date:** October 2025
 
