@@ -5,9 +5,9 @@
 **Authors:**
 - **Jucelha Carvalho** [![ORCID](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0009-0004-6047-2306) (Lead Researcher & Coordinator, Smart Tour Brasil LTDA)
 - **Manus AI 1.5** (DevOps & Formal Verification)
-- **Claude Sonnet 4.5** (Implementation Engineer, Anthropic)
-- **Claude Opus 4.1** (Advanced Insights & Computational Architecture, Anthropic)
-- **GPT-5** (Scientific Research & Theoretical Framework, OpenAI)
+- **Claude Sonnet 4.5** (Implementation Engineer)
+- **Claude Opus 4.1** (Advanced Insights & Computational Architecture)
+- **GPT-5** (Scientific Research & Theoretical Framework)
 
 **Contact**: jucelha@smarttourbrasil.com.br
 
