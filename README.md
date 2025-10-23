@@ -6,7 +6,7 @@
 
 ## 📄 Latest Version
 
-**v24 HONEST** (October 23, 2025): [Markdown](YangMills_v24_HONEST.md) | [PDF](YangMills_v24_HONEST.pdf)
+**v24 (2025-10-23)** (October 23, 2025): [Markdown](YangMills_v24_2025-10-23.md) | [PDF](YangMills_v24_2025-10-23.pdf)
 
 ### What's New in v24
 
