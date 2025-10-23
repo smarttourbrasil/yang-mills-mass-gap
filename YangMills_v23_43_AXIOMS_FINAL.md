@@ -15,7 +15,7 @@
 **Zenodo DOI**: https://doi.org/10.5281/zenodo.17397623
 **ORCID (Jucelha Carvalho)**: https://orcid.org/0009-0004-6047-2306
 
-**Date:** October 2025
+**Date:** October 23, 2025
 
 ---
 
@@ -144,7 +144,7 @@ We present this as a proposed resolution that merits serious consideration and r
 
 ## 1.3 The Consensus Framework Methodology
 
-This work was developed using the **Consensus Framework**, a novel methodology for distributed AI collaboration. The framework coordinates multiple specialized AI agents to tackle complex problems that are beyond the scope of any single model. Although originally developed for complex optimization problems and recognized as a Global Finalist in the UN Tourism Artificial Intelligence Challenge (October 2025), the Consensus Framework is domain-independent and designed for general-purpose problem-solving, particularly in scientific and mathematical research.
+This work was developed using the **Consensus Framework**, a novel methodology for distributed AI collaboration. The framework coordinates multiple specialized AI agents to tackle complex problems that are beyond the scope of any single model. Although originally developed for complex optimization problems and recognized as a Global Finalist in the UN Tourism Artificial Intelligence Challenge (October 23, 2025), the Consensus Framework is domain-independent and designed for general-purpose problem-solving, particularly in scientific and mathematical research.
 
 **Core Principles**:
 - **Decomposition**: Break down large problems into smaller, verifiable sub-tasks.
@@ -152,7 +152,7 @@ This work was developed using the **Consensus Framework**, a novel methodology f
 - **Verification**: Use formal methods (Lean 4) to ensure logical soundness.
 - **Transparency**: All steps, assumptions, and results are documented and publicly available.
 
-The idea of distributed consciousness gave rise to the **Consensus Framework**, a market product developed by Smart Tour Brasil that implements this approach in practice. The Consensus Framework was recognized as a **Global Finalist in the UN Tourism Artificial Intelligence Challenge (October 2025)**, validating the effectiveness of the methodology for solving complex problems.
+The idea of distributed consciousness gave rise to the **Consensus Framework**, a market product developed by Smart Tour Brasil that implements this approach in practice. The Consensus Framework was recognized as a **Global Finalist in the UN Tourism Artificial Intelligence Challenge (October 23, 2025)**, validating the effectiveness of the methodology for solving complex problems.
 
 Although the framework supports up to 7 different AI systems (Claude, GPT, Manus, Gemini, DeepSeek, Mistral, Grok), in this specific Yang-Mills work, 4 agents were used: **Manus AI 1.5** (formal verification), **Claude Sonnet 4.5** (implementation), **Claude Opus 4.1** (advanced insights), and **GPT-5** (scientific research), through iterative rounds of discussion.
 
@@ -583,7 +583,7 @@ Even with a null result, this work contributes:
 
 ---
 
-**Status**: Updated October 2025 based on numerical analysis of 110 lattice configurations.
+**Status**: Updated October 23, 2025 based on numerical analysis of 110 lattice configurations.
 
 **Data and code**: Publicly available at https://github.com/smarttourbrasil/yang-mills-mass-gap
 
@@ -1695,7 +1695,7 @@ The numerical validation of Lemma L3 (Topological Pairing) is **critical** for e
 
 **🎉 MILESTONE: GAP 1 (BRST MEASURE) COMPLETE!**
 
-As of October 21, 2025, **all 5 temporary axioms** of Gap 1 have been formally validated, achieving **100% completion** of the first major gap in the Yang-Mills mass gap proof.
+As of October 23, 2025, **all 5 temporary axioms** of Gap 1 have been formally validated, achieving **100% completion** of the first major gap in the Yang-Mills mass gap proof.
 
 | Axiom | Status | Confidence |
 |-------|--------|-----------|
@@ -1707,7 +1707,7 @@ As of October 21, 2025, **all 5 temporary axioms** of Gap 1 have been formally v
 
 This represents a **major milestone** in the formal verification of the Yang-Mills mass gap.
 
-As of October 21, 2025, **6 out of 43 temporary axioms** have been formally validated through the Consensus Framework, achieving **14% completion** in approximately of intensive multi-agent collaboration.
+As of October 23, 2025, **6 out of 43 temporary axioms** have been formally validated through the Consensus Framework, achieving **14% completion** in approximately of intensive multi-agent collaboration.
 
 ### 8.5.1 Validated Axioms
 
