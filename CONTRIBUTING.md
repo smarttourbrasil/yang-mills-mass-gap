@@ -1,4 +1,4 @@
-# Contributing to Yang-Mills Mass Gap Framework
+# Contributing to the Yang-Mills Mass Gap Framework
 
 Thank you for your interest in this work! We **actively welcome** critical engagement, validation, and improvements from the mathematical physics community.
 
@@ -9,11 +9,26 @@ Thank you for your interest in this work! We **actively welcome** critical engag
 This project embodies **radical transparency** in scientific research:
 
 - ✅ All code is public
-- ✅ All axioms are explicit
+- ✅ All 43 axioms are explicit (100% structurally complete)
 - ✅ All limitations are stated
 - ✅ All critique is welcomed
 
 We believe that **open collaboration** advances science faster than closed review.
+
+---
+
+## 📊 Current Status (October 23, 2025)
+
+- **43/43 axioms structurally complete (100%)**
+- **~14,000 lines of Lean 4 code**
+- **5 main gaps fully structured:**
+  - Gap 1 (BRST Measure): 5/5 axioms ✅
+  - Gap 2 (Gribov Cancellation): 8/8 axioms ✅
+  - Gap 3 (BFS Pairing): 7/7 axioms ✅
+  - Gap 4 (Ricci Limit): 8/8 axioms ✅
+  - Gap 5 (Refinement Layer): 15/15 axioms ✅
+
+**Note:** "Structurally complete" means all axioms are formalized in Lean 4. Formal verification (compilation and proof checking) is the next phase.
 
 ---
 
@@ -25,7 +40,7 @@ We believe that **open collaboration** advances science faster than closed revie
 
 **How to help:**
 
-```bash
+\`\`\`bash
 # Clone the repository
 git clone https://github.com/smarttourbrasil/yang-mills-mass-gap.git
 cd yang-mills-mass-gap
@@ -38,7 +53,8 @@ lake build YangMills.Gap1.BRSTMeasure
 lake build YangMills.Gap2.GribovCancellation
 lake build YangMills.Gap3.BFS_Convergence
 lake build YangMills.Gap4.RicciLimit
-```
+lake build YangMills.Refinement
+\`\`\`
 
 **What to report:**
 
@@ -52,33 +68,32 @@ lake build YangMills.Gap4.RicciLimit
 
 ### 2. 💭 Mathematical Critique
 
-**Goal:** Challenge the physical justifications and logical structure.
+**Goal:** Challenge the physical justifications and logical structure of the 43 axioms.
 
-**Areas for critique:**
+**Structure:** The framework is organized into 5 gaps, each containing multiple axioms:
 
-#### Axiom 1 (BRST Measure):
-- Is dimensional regularization sufficient justification?
-- Can this be derived from measure-theoretic first principles?
-- Are there alternative constructions?
+#### Gap 1 - BRST Measure (5 axioms):
+- M1: Osterwalder-Schrader axioms
+- M2: Reflection positivity
+- M3: GNS construction
+- M4: Wightman axioms
+- M5: Haag-Kastler axioms
 
-#### Axiom 2 (Gribov-Zwanziger):
-- Is the Q-exactness identity rigorous enough?
-- Can Λ[A] be constructed explicitly?
-- What about the Gribov horizon subtleties?
+#### Gap 2 - Gribov Cancellation (8 axioms):
+- G1-G8: Gribov horizon, BRST cohomology, gauge fixing, etc.
 
-#### Axiom 3 (BFS Convergence):
-- Does the adaptation to SU(N) preserve convergence?
-- Are the cluster weight estimates tight?
-- Can β_c be computed explicitly?
+#### Gap 3 - BFS Pairing (7 axioms):
+- B1-B7: Cluster expansion, polymer models, convergence
 
-#### Axiom 4 (Ricci Bound):
-- Is the Bochner formula applicable in this context?
-- Can κ₀ > 0 be proven from the Yang-Mills Lagrangian?
-- What about topological obstructions?
+#### Gap 4 - Ricci Limit (8 axioms):
+- R1-R8: Curvature bounds, geometric analysis
+
+#### Gap 5 - Refinement Layer (15 axioms):
+- A1-A18: Consistency, cohomology, unitarity, spectral gaps, Wilson loops, cluster decomposition, OS positivity, RG flow, etc.
 
 **How to contribute:**
 
-- Open an issue with tag `[critique: axiom-N]`
+- Open an issue with tag `[critique: gap-N-axiom-M]`
 - Provide mathematical reasoning
 - Cite relevant literature
 - Suggest improvements or alternatives
@@ -86,7 +101,6 @@ lake build YangMills.Gap4.RicciLimit
 **Template:** [Mathematical Critique](https://github.com/smarttourbrasil/yang-mills-mass-gap/issues/new?template=critique.md)
 
 ---
-
 ### 3. 🔧 Code Improvements
 
 **Goal:** Strengthen the Lean 4 formalization.
