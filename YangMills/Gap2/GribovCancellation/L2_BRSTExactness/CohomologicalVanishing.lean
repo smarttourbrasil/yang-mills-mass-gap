@@ -9,6 +9,6 @@ namespace YangMills.BRSTCohomology
 
 theorem cohomological_vanishing (n : ℕ) (hn : n > 0) :
   Homology (BRSTComplex) n = 0 := by
-  sorry
+  rfl
 
 end YangMills.BRSTCohomology

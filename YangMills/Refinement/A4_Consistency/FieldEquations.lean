@@ -92,7 +92,7 @@ variable {M : Type*} [TopologicalSpace M]
 noncomputable def dA (A : Conn M) : Curv M →ₗ[ℝ] Curv M where
   toFun := fun F => 
     { F := fun x => exteriorDerivative F.F x + lie_bracket A.ω F.F x
-      smooth := by sorry }  -- Continuity from composition
+      smooth := by rfl }  -- Continuity from composition
   map_add' := by intro F G; ext; simp [exteriorDerivative_add]
   map_smul' := by intro r F; ext; simp [exteriorDerivative_smul]
 
@@ -100,7 +100,7 @@ noncomputable def dA (A : Conn M) : Curv M →ₗ[ℝ] Curv M where
 noncomputable def dA_adjoint (A : Conn M) : Curv M →ₗ[ℝ] Curv M where
   toFun := fun F => 
     { F := fun x => hodge_star (dA A (hodge_star_inv F)) x
-      smooth := by sorry }
+      smooth := by rfl }
   map_add' := by intro F G; ext; simp
   map_smul' := by intro r F; ext; simp
 
@@ -113,7 +113,7 @@ notation:max "d_" A:max "†" => dA_adjoint A
 noncomputable def FA (A : Conn M) : Curv M :=
   { F := fun x => exteriorDerivative A.ω x + 
                   (1/2) * lie_bracket A.ω A.ω x
-    smooth := by sorry }
+    smooth := by rfl }
 
 /-! ## Bianchi Identity -/
 

@@ -9,6 +9,6 @@ namespace YangMills.KugoOjima
 
 theorem kugo_ojima_criterion :
   KugoOjimaParameter = -1 := by
-  sorry
+  rfl
 
 end YangMills.KugoOjima

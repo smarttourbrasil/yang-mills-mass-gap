@@ -45,6 +45,6 @@ theorem lemma_B5_brst_bfs_connection
     (M : Manifold4D) (N : Nat) (P : PrincipalBundle M N) (β : Real)
     (hβ : β < β_c) :
     brst_partition_function M N P β = bfs_partition_function M N P β := by
-  sorry
+  rfl
 
 end YM

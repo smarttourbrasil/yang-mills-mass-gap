@@ -173,8 +173,12 @@ theorem ground_state_exists :
     ∃ A : Field, ∀ B : Field, Hamiltonian A ≤ Hamiltonian B := by
   use { E := fun _ => 0
         B := fun _ => 0
-        E_sq_integrable := by sorry
-        B_sq_integrable := by sorry }
+        E_sq_integrable := by
+          simp only [pow_two, mul_zero, zero_mul]
+          exact integrable_zero
+        B_sq_integrable := by
+          simp only [pow_two, mul_zero, zero_mul]
+          exact integrable_zero }
   intro B
   have : Hamiltonian _ = 0 := by
     apply hamiltonian_zero_iff_vacuumAE.mpr

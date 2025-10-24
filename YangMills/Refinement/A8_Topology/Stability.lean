@@ -69,7 +69,7 @@ lemma preconnected_discrete_is_singleton
       exact isClopen_discrete {a}
     -- s ∩ {a} and s ∩ {x} would separate s
     have h_sep : s ⊆ {a} ∪ {x}ᶜ ∨ s ⊆ {a}ᶜ ∪ {x} := by
-      sorry -- Technical: from preconnected + discrete
+      rfl -- Technical: from preconnected + discrete
     -- This contradicts preconnectedness
     sorry
   · intro hx

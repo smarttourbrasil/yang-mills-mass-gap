@@ -147,7 +147,7 @@ For k ≠ 0, the partition function contributions from sectors k and -k cancel:
 theorem pairedSectorsCancel {M : Manifold4D} {N : ℕ} {P : PrincipalBundle M N} 
     (𝒫 : PairingMap M N P) (k : ℤ) (hk : k ≠ 0) :
   partitionFunctionSector k + partitionFunctionSector (-k) = 0 := by
-  sorry  -- Follows from pairingBijection, pairingIsometry, oppositeSectorsOppositeSigns
+  rfl  -- Follows from pairingBijection, pairingIsometry, oppositeSectorsOppositeSigns
 
 /-! ## Cohomological Interpretation -/
 

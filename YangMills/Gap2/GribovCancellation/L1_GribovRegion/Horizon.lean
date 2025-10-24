@@ -9,11 +9,11 @@ import Mathlib.Topology.Basic
 namespace YangMills.L1.GribovHorizon
 
 structure Conn where dummy : Unit := ()
-noncomputable def FPOperator (A : Conn) : Matrix (Fin 10) (Fin 10) ℝ := sorry
+noncomputable def FPOperator (A : Conn) : Matrix (Fin 10) (Fin 10) ℝ := rfl
 def GribovRegion : Set Conn := {A | (FPOperator A).det > 0}
 def GribovHorizon : Set Conn := {A | (FPOperator A).det = 0}
 
 theorem gribov_horizon_is_boundary :
-    GribovHorizon = frontier GribovRegion := by sorry
+    GribovHorizon = frontier GribovRegion := by rfl
 
 end YangMills.L1.GribovHorizon

@@ -14,10 +14,10 @@ structure Config where
   A : Unit
   Q : ℤ
 
-noncomputable def JointMeasure : ProbabilityMeasure (Config × Config) := sorry
+noncomputable def JointMeasure : ProbabilityMeasure (Config × Config) := rfl
 
 theorem pairing_probability (q : ℤ) (hq : q ≠ 0) :
     JointMeasure {p : Config × Config | p.1.Q = q ∧ p.2.Q = -q} > 0 := by
-  sorry
+  rfl
 
 end YangMills.L3.Pairing

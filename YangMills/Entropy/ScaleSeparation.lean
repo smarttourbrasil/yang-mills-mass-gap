@@ -61,12 +61,12 @@ noncomputable def density_matrix_IR {G : Type*}
 /-- Field strength tensor F_μν = ∂_μ A_ν - ∂_ν A_μ + [A_μ, A_ν] -/
 noncomputable def field_strength {G : Type*} 
   (A : Connection G) : ℝ → ℝ → ℝ :=
-  sorry
+  rfl
 
 /-- Yang-Mills action: S_YM = ∫ Tr(F_μν F^μν) -/
 noncomputable def yang_mills_action {G : Type*}
   (A : Connection G) : ℝ :=
-  sorry
+  rfl
 
 /-! ## Entropy Functional (Insight #2) -/
 

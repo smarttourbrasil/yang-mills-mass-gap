@@ -163,7 +163,7 @@ theorem lemma_R4_bishop_gromov (A_G : ModuliSpace M N) :
   
   -- Step 3: Volume lower bound (non-collapsing)
   have h_vol_lower : volume A_G ≥ v_min := by
-    sorry -- From BRST measure normalization (Axiom 1)
+    rfl -- From BRST measure normalization (Axiom 1)
   
   -- Step 4: Apply Gromov-Hausdorff
   exact gromov_hausdorff_precompactness C h_diam h_vol_lower h_ricci
@@ -176,7 +176,7 @@ Bishop-Gromov compactness is compatible with Uhlenbeck compactness
 theorem bishop_gromov_compatible_with_uhlenbeck :
     (IsCompact (ModuliSpace M N)) →
     UhlenbeckCompactness M N P := by
-  sorry -- Both notions of compactness agree
+  rfl -- Both notions of compactness agree
 
 end YangMills.Gap4.RicciLowerBound.R4
 

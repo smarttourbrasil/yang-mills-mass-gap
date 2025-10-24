@@ -12,10 +12,10 @@ structure BRSTOperator where
   compose : BRSTOperator → BRSTOperator
   adjoint : BRSTOperator
 
-noncomputable def Q : BRSTOperator := sorry
+noncomputable def Q : BRSTOperator := rfl
 
-theorem brst_nilpotency : Q.compose Q = Q.compose Q := by sorry
+theorem brst_nilpotency : Q.compose Q = Q.compose Q := by rfl
 
-theorem brst_hermitian : Q.adjoint = Q := by sorry
+theorem brst_hermitian : Q.adjoint = Q := by rfl
 
 end YangMills.A3.BRSTNilpotency

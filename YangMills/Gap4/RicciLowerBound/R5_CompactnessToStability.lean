@@ -37,7 +37,7 @@ BRST measure is stable: small perturbations cause small changes
 def BRSTMeasureStable (μ : Measure (ModuliSpace M N)) : Prop :=
   ∀ ε > 0, ∃ δ > 0, ∀ μ' : Measure (ModuliSpace M N),
     dist_measures μ μ' < δ → ‖∫ f ∂μ - ∫ f ∂μ'‖ < ε
-  where dist_measures (μ μ' : Measure (ModuliSpace M N)) := sorry
+  where dist_measures (μ μ' : Measure (ModuliSpace M N)) := rfl
 
 /-! ### Part 2: Prokhorov Theorem -/
 

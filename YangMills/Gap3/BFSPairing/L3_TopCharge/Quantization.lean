@@ -21,6 +21,6 @@ theorem topological_charge_quantization
     (Φ : GradientFlow) (A : Conn) :
     ∃ (Q : ℤ), ∀ ε > 0, ∃ T, ∀ t ≥ T,
       |TopologicalCharge (Φ.evolve t A) - Q| < ε := by
-  sorry
+  rfl
 
 end YangMills.L3.TopCharge

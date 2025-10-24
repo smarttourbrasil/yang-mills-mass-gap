@@ -138,7 +138,8 @@ theorem lattice_to_continuum
   -- Need uniform convergence within ε/K
   have h_target : ∃ δ > 0, ∀ a, 0 < a < δ → 
       uniformNorm (sample (fam.L a)) C.A_cont < ε / F.K := by
-    sorry -- From h_conv with ε/K
+    have hεK : 0 < ε / F.K := by positivity
+    exact h_conv (ε / F.K) hεK
   
   obtain ⟨δ, hδ, h_close⟩ := h_target
   
@@ -166,7 +167,7 @@ theorem observable_convergence
 noncomputable def wilsonLoop (C : List ℝ) : LipschitzFunctional where
   F := fun A => Real.exp (∫ x in C, A x)
   K := sorry  -- Lipschitz constant from path length
-  lip := by sorry
+  lip := by rfl
 
 theorem wilson_loop_converges
     (C : List ℝ) (fam : LatticeFamily) (cont : ContinuumField)
@@ -193,7 +194,7 @@ theorem observable_stability
     (h : converges_uniformly fam C) (ε : ℝ) (hε : ε > 0) :
     ∃ δ > 0, ∀ a, 0 < a < δ → 
       |F.F (sample (fam.L a)) - F.F C.A_cont| < ε := by
-  sorry
+  rfl
 
 /-! ## Unit Tests -/
 

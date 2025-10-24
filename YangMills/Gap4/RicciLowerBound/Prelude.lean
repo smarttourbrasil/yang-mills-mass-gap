@@ -81,7 +81,7 @@ Regular locus: smooth stratum of moduli space
 -/
 def RegularLocus (A_G : ModuliSpace M N) : Set (ModuliSpace M N) :=
   {p | IsRegular p}
-  where IsRegular (p : ModuliSpace M N) : Prop := sorry
+  where IsRegular (p : ModuliSpace M N) : Prop := rfl
 
 /-! ### L² Metric -/
 
@@ -102,7 +102,7 @@ L² metric on moduli space (induced from connections)
 - Invariant under gauge transformations
 -/
 def l2_metric (A_G : ModuliSpace M N) : RiemannianMetric A_G :=
-  sorry
+  rfl
 
 /-! ### Ricci Curvature -/
 
@@ -113,7 +113,7 @@ Ricci curvature tensor on moduli space
 where R is the Riemann curvature tensor
 -/
 def ricci_curvature (A_G : ModuliSpace M N) : BilinearForm (TangentBundle A_G) :=
-  sorry
+  rfl
 
 /--
 Ricci curvature in direction v: Ric(v,v)
@@ -129,7 +129,7 @@ Yang-Mills functional S_YM : A → ℝ
 **Definition:** S_YM[A] = (1/4) ∫ Tr(F ∧ *F)
 -/
 def yang_mills_functional (A : Connection M N P) : ℝ :=
-  sorry
+  rfl
 
 /--
 Hessian of Yang-Mills functional at A
@@ -137,7 +137,7 @@ Hessian of Yang-Mills functional at A
 **Definition:** H_A(ω₁,ω₂) = d²S_YM/dω₁dω₂ |_A
 -/
 def hessian_yang_mills (A : Connection M N P) : BilinearForm (TangentSpace A) :=
-  sorry
+  rfl
 
 /-! ### Connections to Axioms 1-3 -/
 

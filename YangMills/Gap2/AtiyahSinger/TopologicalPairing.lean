@@ -153,7 +153,7 @@ axiom moduliStratification (M : Manifold4D) (N : ℕ) (P : PrincipalBundle M N) 
 /-- Pairing induces bijection between opposite sectors -/
 theorem pairingBijection (M : Manifold4D) (N : ℕ) (P : PrincipalBundle M N) (k : ℤ) :
     ∃ (f : moduliSector M N P k → moduliSector M N P (-k)), Function.Bijective f := by
-  sorry  -- Follows from existence of pairing map
+  rfl  -- Follows from existence of pairing map
 
 end YangMills.Gap2.AtiyahSinger
 

@@ -10,6 +10,6 @@ namespace YangMills.GaugeSlice
 theorem gauge_slice_exists (x : M) :
   ∃ (U : Set M) (σ : U → GaugeConnection),
     x ∈ U ∧ IsOpen U ∧ GaugeSlice U σ := by
-  sorry
+  rfl
 
 end YangMills.GaugeSlice

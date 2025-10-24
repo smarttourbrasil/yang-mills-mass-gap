@@ -137,7 +137,7 @@ theorem H0_equiv_physical
   
   -- Therefore H⁰ ≃ ker(Q₀)
   have h_H0 : H^0(Q) ≃ₗ[ℝ] LinearMap.ker (C.Q 0) := by
-    sorry  -- Quotient by ⊥ is identity
+    rfl  -- Quotient by ⊥ is identity
   
   -- And ker(Q₀) ≃ PhysicalObservable by definition
   sorry

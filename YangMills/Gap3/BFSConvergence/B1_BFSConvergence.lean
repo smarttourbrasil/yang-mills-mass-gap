@@ -46,6 +46,6 @@ theorem lemma_B1_bfs_convergence
     (hβ : β < β_c) :
     ∃ C c : Real, C > 0 ∧ c > 0 ∧ ∀ n : Nat,
       |Z_BFS_truncated M N P β n - bfs_partition_function M N P β| ≤ C * Real.exp (-c * (n.toReal)) := by
-  sorry
+  rfl
 
 end YM

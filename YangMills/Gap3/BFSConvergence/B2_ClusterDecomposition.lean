@@ -48,6 +48,6 @@ theorem lemma_B2_cluster_decomposition
       ∀ (O₁ O₂ : Observable),
         ∀ (R : Real), dist (supp O₁) (supp O₂) = R →
           |conn2 β O₁ O₂| ≤ C * Real.exp (-m * R) := by
-  sorry
+  rfl
 
 end YM

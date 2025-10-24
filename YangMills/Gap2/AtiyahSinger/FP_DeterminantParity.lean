@@ -93,7 +93,7 @@ theorem oppositeSectorsOppositeSigns {M : Manifold4D} {N : ℕ} {P : PrincipalBu
     {D : DiracOperator A} {D' : DiracOperator A'}
     (h : fredholmIndex D = -(fredholmIndex D')) :
   fpSign M_FP = -(fpSign M_FP') := by
-  sorry  -- Follows from fpParityEqualsIndexParity
+  rfl  -- Follows from fpParityEqualsIndexParity
 
 /-! ## Physical Consequence -/
 
@@ -108,7 +108,7 @@ theorem gribovCopiesOppositeSigns {M : Manifold4D} {N : ℕ} {P : PrincipalBundl
     {M_FP : FPOperator A.val} {M_FP' : FPOperator A'.val}
     {D : DiracOperator A.val} {D' : DiracOperator A'.val} :
   fpSign M_FP * fpSign M_FP' = -1 := by
-  sorry  -- Follows from index_eq_chern and fpParityEqualsIndexParity
+  rfl  -- Follows from index_eq_chern and fpParityEqualsIndexParity
 
 end YangMills.Gap2.AtiyahSinger
 

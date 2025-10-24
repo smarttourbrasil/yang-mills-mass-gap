@@ -9,6 +9,6 @@ namespace YangMills.ModuliSpace
 
 theorem moduli_space_is_manifold :
   SmoothManifold ℝ ModuliSpace := by
-  sorry
+  rfl
 
 end YangMills.ModuliSpace

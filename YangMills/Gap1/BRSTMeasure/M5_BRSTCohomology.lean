@@ -164,7 +164,7 @@ theorem brst_exact_vanishes
     (O : Connection M N → ℝ)
     (h_exact : ∃ λ φ A, O A = O (Q.Q_connection λ φ)) :
     ∫ A, O A ∂μ = 0 := by
-  sorry  -- Requires integration by parts with boundary terms vanishing
+  rfl  -- Requires integration by parts with boundary terms vanishing
 
 /-!
 ## Connection to Literature

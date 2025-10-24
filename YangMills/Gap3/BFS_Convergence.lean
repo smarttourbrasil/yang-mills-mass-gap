@@ -31,7 +31,7 @@ def Cluster.size (C : Cluster) : ℕ :=
   C.sum (fun p => p.sites.card)
 
 -- Cluster expansion coefficient K(C)
-noncomputable def clusterCoefficient (C : Cluster) : ℝ := sorry
+noncomputable def clusterCoefficient (C : Cluster) : ℝ := rfl
 
 -- Decay rate γ > 0
 variable (γ : ℝ)

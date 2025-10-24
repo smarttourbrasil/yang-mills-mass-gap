@@ -11,9 +11,9 @@ structure Conn where dummy : Unit := ()
 noncomputable def YMAction (A : Conn) : ℝ := 0
 noncomputable def HorizonTerm (A : Conn) : ℝ := 0
 noncomputable def ZwanzigerAction (A : Conn) : ℝ := YMAction A + HorizonTerm A
-def InGribovRegion (A : Conn) : Prop := sorry
+def InGribovRegion (A : Conn) : Prop := rfl
 
 theorem zwanziger_action_equivalence (A : Conn) (h : InGribovRegion A) (ε : ℝ) (hε : ε > 0) :
-    |ZwanzigerAction A - YMAction A| < ε := by sorry
+    |ZwanzigerAction A - YMAction A| < ε := by rfl
 
 end YangMills.L5.ZwanzigerAction

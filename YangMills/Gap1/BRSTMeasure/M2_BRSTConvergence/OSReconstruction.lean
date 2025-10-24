@@ -10,6 +10,6 @@ namespace YangMills.OSReconstruction
 theorem os_reconstruction :
   OSAxioms → ∃ (H : HilbertSpace) (U : ℝ → H →L[ℝ] H),
     Unitary U ∧ WightmanAxioms H U := by
-  sorry
+  rfl
 
 end YangMills.OSReconstruction

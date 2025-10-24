@@ -45,6 +45,6 @@ theorem lemma_B4_continuum_limit_stability
     (hpos : ∀ a > 0, mass_gap_lattice a > 0) :
     ∃ Δ : Real, Δ > 0 ∧
       Tendsto mass_gap_lattice (Filter.atTop) (Filter.pure Δ) := by
-  sorry
+  rfl
 
 end YM

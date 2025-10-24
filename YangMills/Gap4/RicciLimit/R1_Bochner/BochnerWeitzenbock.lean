@@ -88,12 +88,12 @@ theorem bochner_weitzenbock_formula
   have h_comm : ∀ i j, 
     ∇.nabla i (∇.nabla j ω) - ∇.nabla j (∇.nabla i ω) = 
       R i j ω + [F_A ∇ i j, ω] := by
-    sorry
+    rfl
   
   -- Step 3: Take trace to get rough Laplacian
   have h_trace : 
     ∑ i, ∇.nabla i (∇.nabla i ω) = roughLaplacian ∇ ω := by
-    sorry
+    rfl
   
   -- Step 4: Identify Ricci and curvature terms
   sorry

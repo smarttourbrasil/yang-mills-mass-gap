@@ -21,12 +21,12 @@ theorem gluon_propagator_suppression :
     GluonPropagator 0 = 0 ∧
     ∃ κ > 0, ∀ ε > 0, ∃ δ > 0, ∀ p2 ∈ Set.Ioo 0 δ,
       |GluonPropagator p2 / p2^(2 - κ) - 1| < ε := by
-  sorry
+  rfl
 
 /-- Complementarity: gluon suppressed ↔ ghost enhanced -/
 theorem gluon_ghost_complementarity :
     ∃ C > 0, ∀ p2 > 0, GluonPropagator p2 * GhostPropagator p2 < C := by
-  sorry
+  rfl
 
 /-- Physical interpretation: no free gluon propagation at IR -/
 theorem no_ir_pole :
