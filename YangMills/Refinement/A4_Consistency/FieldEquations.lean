@@ -126,7 +126,6 @@ theorem bianchi_identity (A : Conn M) : Bianchi A := by
   unfold Bianchi FA dA
   ext x
   -- d_A F_A = d(dA + A∧A) + [A, dA + A∧A]
-  -- = d(dA) + d(A∧A) + [A, dA] + [A, A∧A]
   -- = 0 + d(A∧A) + [A, dA] + [A, A∧A]  (d² = 0)
   -- = [A, dA] + [A, dA] + [A, [A,A]]  (Jacobi + product rule)
   -- = 0  (Jacobi identity)

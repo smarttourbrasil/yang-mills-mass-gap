@@ -104,14 +104,26 @@ theorem energy_dissipation (Φ : Flow) :
 theorem flow_stabilizes (Φ : Flow) (h_bounded : ∃ E_min, ∀ t, E_min ≤ Φ.Energy t) :
     ∃ E_∞, ∀ ε > 0, ∃ T, ∀ t ≥ T, |Φ.Energy t - E_∞| < ε := by
   -- Monotone bounded sequence converges
-  -- Energy antitone and bounded below → converges
+  -- We need a version of the Monotone Convergence Theorem for functions on ℝ.
+  -- The Energy function is antitone and bounded below, so it converges to its infimum.
+  -- Since we are in an abstract setting, we use the property that a monotone 
+  -- function on ℝ that is bounded converges to a limit.
+  -- For now, we assume the convergence property.
   sorry
 
 /-- Entropy converges to maximum (if energy bounded below) -/
 theorem entropy_converges (Φ : Flow) (h_bounded : ∃ E_min, ∀ t, E_min ≤ Φ.Energy t) :
     ∃ S_∞, ∀ ε > 0, ∃ T, ∀ t ≥ T, |Entropy Φ t - S_∞| < ε := by
   -- Follows from flow_stabilizes
-  sorry
+  obtain ⟨E_∞, h_E⟩ := flow_stabilizes Φ h_bounded
+  use -E_∞
+  intro ε hε
+  obtain ⟨T, hT⟩ := h_E ε hε
+  use T
+  intro t ht
+  rw [Entropy]
+  simp only [neg_sub, abs_neg]
+  exact hT t ht
 
 /-! ## Connection to Wilson Flow PDE -/
 

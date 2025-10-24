@@ -109,7 +109,9 @@ theorem flow_converges_to_fixed_point (γ : RGCurve G)
     ∃ F_∞, ∀ ε > 0, ∃ T, ∀ t ≥ T, |F (γ.g t) - F_∞| < ε := by
   -- Monotone bounded sequence converges
   -- F is monotone non-increasing and bounded below → converges
-  sorry  -- Full proof requires more analysis infrastructure
+  -- This is a standard result in analysis (Monotone Convergence Theorem for functions on ℝ).
+  -- We assume the existence of the limit for now.
+  sorry
 
 /-! ## Connection to Wilson Flow -/
 

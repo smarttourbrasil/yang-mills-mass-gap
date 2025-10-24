@@ -252,7 +252,7 @@ theorem energyLevel_compact
   
   -- Closed subset of compact is compact
   apply IsCompact.of_isClosed_subset h_bounded_compact
-  · sorry  -- energyLevel is closed (preimage of closed set under continuous action)
+  · sorry -- energyLevel is closed (preimage of closed set under continuous action)
   · exact h_subset
 
 /--
@@ -367,7 +367,7 @@ theorem level_integral_bound
   use 1 + α
   
   constructor
-  · sorry  -- K > 0 (product of positives)
+  · sorry -- K > 0 (product of positives)
   
   constructor
   · linarith  -- β = 1 + α > 0
@@ -483,9 +483,9 @@ theorem lemma_M4_finiteness
         apply tsum_le_tsum
         · intro n
           obtain ⟨K_n, β_n, _, _, h_bound_n⟩ := h_level_bounds n
-          sorry  -- Use uniform bound (technical)
-        · sorry  -- Summability of geometric series
-        · sorry  -- Summability of integrals
+          sorry -- Use uniform bound (technical)
+        · sorry -- Summability of geometric series
+        · sorry -- Summability of integrals
     _ = K_0 * ∑' n, Real.exp (- β_0 * n) := by
         rfl  -- Factor out constant
     _ = K_0 * (1 / (1 - Real.exp (- β_0))) := by

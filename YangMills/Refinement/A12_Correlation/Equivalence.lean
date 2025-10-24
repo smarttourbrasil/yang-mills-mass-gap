@@ -110,7 +110,7 @@ theorem correlation_equivalence
     have : Integrable (fun _ : ℝ => (C₁ * C₂ * M)) := by
       -- Cutoff to compact set for integrability
       exact Integrable.const_mul (integrable_indicator_ae_measurable
-        (μ := (by infer_instance : Measure ℝ)) (s := Set.Icc (-1:ℝ) 1) ?meas) (C₁ * C₂ * M)
+        (μ := (by infer_instance : Measure ℝ)) (s := Set.Icc (-1:ℝ) 1) (by exact measurableSet_Icc)) (C₁ * C₂ * M)
     simpa [dom] using this
   
   -- Domination bound

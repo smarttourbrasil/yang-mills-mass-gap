@@ -140,7 +140,7 @@ theorem H0_equiv_physical
     rfl  -- Quotient by ⊥ is identity
   
   -- And ker(Q₀) ≃ PhysicalObservable by definition
-  sorry
+  exact LinearEquiv.refl _
 
 /-- THEOREM 2: Hⁿ = 0 for n > 0 (via quartet mechanism) -/
 theorem vanishing_positive_degrees
@@ -195,7 +195,7 @@ theorem no_anomalies
     ∀ n ≠ 0, H^n(Q) ≃ₗ[ℝ] 0 := by
   intro n hn
   cases' ne_iff_lt_or_gt.mp hn with hneg hpos
-  · -- n < 0: no anti-ghosts at high negative
+   -- n < 0: no anti-ghosts at high negative
     sorry
   · -- n > 0: vanishing theorem
     exact vanishing_positive_degrees C hq n hpos

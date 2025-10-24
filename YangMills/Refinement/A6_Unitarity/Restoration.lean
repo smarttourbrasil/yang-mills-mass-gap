@@ -195,7 +195,7 @@ theorem no_ghost_states
       physical_inner K Q ψ ψ ≥ 0 := by
   intro ψ
   by_cases h : ψ = 0
-  · rw [h]; sorry  -- ⟪0,0⟫ = 0
+  · rw [h]; simp [physical_inner]  -- ⟪0,0⟫ = 0
   · exact le_of_lt (positivity_on_physical K Q h_quartet ψ h)
 
 /-- S-matrix is unitary -/

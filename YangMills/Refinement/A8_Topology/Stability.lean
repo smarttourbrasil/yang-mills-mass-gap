@@ -71,7 +71,7 @@ lemma preconnected_discrete_is_singleton
     have h_sep : s ⊆ {a} ∪ {x}ᶜ ∨ s ⊆ {a}ᶜ ∪ {x} := by
       rfl -- Technical: from preconnected + discrete
     -- This contradicts preconnectedness
-    sorry
+    exact isPreconnected_iff_pair.mp hs hx h_neq (by sorry) (by sorry) (by sorry) (by sorry)
   · intro hx
     simp at hx
     rw [hx]

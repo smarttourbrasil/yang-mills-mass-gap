@@ -68,7 +68,10 @@ structure MetricConnection
 noncomputable def adjoint_connection 
     (∇ : MetricConnection E M) :
     ∀ X, Derivation M E :=
-  sorry -- Define via integration by parts
+  -- The formal adjoint is defined via integration by parts.
+  -- In Lean 4, this is usually proven by using the `adjoint` operator from the functional analysis library.
+  -- For now, we assume the existence of the adjoint operator.
+  sorry
 
 /-- Laplacian of a connection -/
 noncomputable def laplacian 
@@ -88,8 +91,8 @@ theorem laplacian_selfAdjoint
   intros s t
   -- Expand definition
   unfold laplacian
-  -- Use that ∇ and ∇† are adjoints
-  sorry
+  -- Proof relies on the definition of adjoint operator: ⟨∇†∇ s, t⟩ = ⟨∇ s, ∇ t⟩ = ⟨s, ∇†∇ t⟩
+  sorry -- Placeholder for full proof using mathlib
 
 /-- The Laplacian is non-negative -/
 theorem laplacian_nonneg 
@@ -101,8 +104,8 @@ theorem laplacian_nonneg
   -- Rewrite as sum of squares
   have h : ⟨Δ_∇ s, s⟩ = ‖∇.nabla s‖² + ‖(adjoint_connection ∇) s‖² := by
     rfl
-  -- Both terms non-negative
-  sorry
+  -- Proof relies on the definition of adjoint operator: ⟨∇†∇ s, s⟩ = ⟨∇ s, ∇ s⟩ = ‖∇ s‖² ≥ 0
+  sorry -- Placeholder for full proof using mathlib
 
 /-- Ellipticity: principal symbol is positive definite -/
 theorem laplacian_elliptic 
@@ -142,7 +145,13 @@ theorem bochner_formula
   -- Relates Laplacian to:
   -- 1. Rough Laplacian ∇^†∇ (purely metric)
   -- 2. Ricci curvature term (geometric)
+  -- This is the key geometric identity
+  -- Relates Laplacian to:
+  -- 1. Rough Laplacian ∇^†∇ (purely metric)
+  -- 2. Ricci curvature term (geometric)
   -- 3. Curvature commutator [F, ·] (gauge-theoretic)
+  -- The proof is highly complex and requires the full machinery of differential geometry in mathlib.
+  -- We assume the identity holds for now, as it is a standard result in geometric analysis.
   sorry
 
 /-- Connection to Lemma R1: Laplacian is well-defined -/
