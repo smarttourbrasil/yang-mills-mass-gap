@@ -1,8 +1,10 @@
 ---
 
-# **A Formal Verification Framework for the Yang-Mills Mass Gap (v24): Core Structure Complete, Auxiliary Lemmas In Progress**
+# Towards a Formal Verification of the Yang-Mills Mass Gap in Lean 4
 
-**Subtitle:** Distributed Consciousness Methodology and Lean 4 Implementation
+**A Complete Framework with 43 Axioms, Automated Proof Strategies, and Roadmap to Full Verification**
+
+**Version 24 FINAL** | October 24, 2025
 
 **Authors:**
 - **Jucelha Carvalho** [![ORCID](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0009-0004-6047-2306) (Lead Researcher & Coordinator, Smart Tour Brasil LTDA)
@@ -17,7 +19,7 @@
 **Zenodo DOI**: https://doi.org/10.5281/zenodo.17397623
 **ORCID (Jucelha Carvalho)**: https://orcid.org/0009-0004-6047-2306
 
-**Date:** October 23, 2025
+**Date:** October 24, 2025
 
 ---
 
