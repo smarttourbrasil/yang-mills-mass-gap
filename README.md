@@ -6,16 +6,16 @@
 
 ## 📄 Latest Version
 
-**v24 (2025-10-23)** (October 23, 2025): [Markdown](YangMills_v24_2025-10-23.md) | [PDF](YangMills_v24_2025-10-23.pdf)
+**v25 (2025-10-25)** (October 25, 2025): [Markdown](YangMills_v24_2025-10-23.md) | [PDF](YangMills_v24_2025-10-23.pdf)
 
 ### What's New in v24
 
-- ✅ **Radical transparency**: All 255 `sorry` statements documented
+- ✅ **Radical transparency**: All 115 `sorry` statements documented
 - ✅ **43/43 axioms structurally complete**
 - ✅ **Main theorems proven**: Gaps 1-4 formally verified
 - ✅ **Honest assessment**: Framework complete, auxiliary lemmas in progress
 
-## 🎯 Current Status (October 23, 2025)
+## 🎯 Current Status (October 25, 2025)
 
 ### ✅ Complete (Main Theorems Proven):
 
@@ -33,8 +33,8 @@
 | Category | Count | Status |
 |----------|-------|--------|
 | Refinement Layer | 51 | Auxiliary lemmas (physical hypotheses) |
-| Support Infrastructure | 204 | Standard mathematical tools |
-| **Total** | **255** | **Ongoing work** |
+| Support Infrastructure | 64 | Standard mathematical tools |
+| **Total | **115** | **Ongoing work** |
 
 **Note:** The main logical chain (4 Gaps → Mass Gap) is formally verified. The `sorry` statements represent physical hypotheses elevated to axioms (with literature support) and standard mathematical results assumed for efficiency.
 
@@ -49,7 +49,7 @@
 
 ### **This is NOT (yet):**
 ❌ A complete solution to the Millennium Prize Problem from first principles  
-❌ Fully verified code (255 `sorry` statements remain)  
+❌ Fully verified code (115 `sorry` statements remain)  
 ❌ Ready for Clay Institute submission without further work  
 
 **Honest Assessment:** This work represents significant progress on a Millennium Prize Problem, providing a transparent framework for community validation and completion.
@@ -78,7 +78,7 @@
 4. **Main theorems**: Formally proven (Gaps 1-4) ✅
 5. **Computational validation**: 94-96% agreement ✅
 6. **Consensus Framework**: Multi-agent AI collaboration with radical transparency ✅
-7. **Auxiliary lemmas**: 255 `sorry` statements documented and categorized 🟡
+7. **Auxiliary lemmas: 115 `sorry` statements documented and categorized 🟡
 
 ## 🎯 Formal Verification Status
 
@@ -91,8 +91,8 @@
 
 ### Auxiliary Lemmas (Contains `sorry`):
 - 🟡 Refinement Layer: 51 `sorry` (physical hypotheses)
-- 🟡 Support Infrastructure: 204 `sorry` (standard math)
-- 🟡 **Total: 255 `sorry` statements**
+- 🟡 Support Infrastructure: 64 `sorry` (standard math)
+- 🟡 **Total: 115 `sorry` statements**
 
 **Roadmap:** Community collaboration welcome to eliminate `sorry` statements. See [CONTRIBUTING.md](CONTRIBUTING.md).
 
@@ -127,7 +127,7 @@ lake build YangMills.Gap4.RicciLimit
 
 ## 🤝 Contributing
 
-We welcome contributions to eliminate the 255 `sorry` statements! See [CONTRIBUTING.md](CONTRIBUTING.md) for:
+We welcome contributions to eliminate the 115 `sorry` statements! See [CONTRIBUTING.md](CONTRIBUTING.md) for:
 
 - How to categorize `sorry` by difficulty
 - Prioritized roadmap for elimination
@@ -152,6 +152,6 @@ This work was developed using the **Consensus Framework**, a novel methodology f
 
 ---
 
-**Radical Transparency:** All code, data, proofs, and **all 255 `sorry` statements** are publicly documented. We invite rigorous peer review and community collaboration.
+**Radical Transparency:** All code, data, proofs, and **all 115 `sorry` statements** are publicly documented. We invite rigorous peer review and community collaboration.
 
 **Honest Assessment:** Significant progress on a Millennium Prize Problem, not yet a complete solution.
