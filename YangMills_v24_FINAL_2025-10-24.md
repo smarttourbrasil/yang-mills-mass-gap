@@ -54,9 +54,9 @@ We developed a **systematic framework** to attack this problem using:
 - **43/43 axioms**: Structurally formalized ✅
 
 ### 🟡 In Progress (Contains `sorry` Statements):
-- **Refinement Layer**: 51 `sorry` statements (auxiliary lemmas)
-- **Support Infrastructure**: 204 `sorry` statements (standard mathematical tools)
-- **Total**: 255 `sorry` statements remaining
+- **Refinement Layer**: 25 `sorry` statements (auxiliary lemmas)
+- **Support Infrastructure**: 90 `sorry` statements (standard mathematical tools)
+- **Total**: 115 `sorry` statements remaining
 
 **Note:** The main logical chain (4 Gaps → Mass Gap) is formally verified. The `sorry` statements represent:
 - Physical hypotheses elevated to axioms (with literature support)
@@ -65,12 +65,12 @@ We developed a **systematic framework** to attack this problem using:
 
 ## What's Conditional?
 
-The 20 main lemmas are **fully proven** in Lean 4. However, they depend on 43 "temporary axioms" (intermediate statements with 70-95% confidence based on literature). Additionally, 255 auxiliary lemmas contain `sorry` statements where physical hypotheses are elevated or standard mathematical results are assumed.
+The 20 main lemmas are **fully proven** in Lean 4. However, they depend on 43 "temporary axioms" (intermediate statements with 70-95% confidence based on literature). Additionally, 115 auxiliary lemmas contain `sorry` statements where physical hypotheses are elevated or standard mathematical results are assumed.
 
 Think of it as:
 - **Proven**: The logical structure (if axioms hold, then mass gap exists) ✅
 - **Structurally complete**: All 43 axioms formalized in Lean 4 ✅
-- **In progress**: 255 auxiliary lemmas pending formal proof 🟡
+- **In progress**: 115 auxiliary lemmas pending formal proof 🟡
 
 ## Why It Matters
 
@@ -88,7 +88,7 @@ Think of it as:
 - ~14,000 lines of Lean 4 code
 
 🟡 **Auxiliary Lemmas In Progress**:
-- 255 `sorry` statements remaining
+- 115 `sorry` statements remaining
 - Categorized by difficulty (easy/medium/hard)
 - Roadmap for community completion available
 
@@ -104,7 +104,7 @@ Think of it as:
 
 **This is NOT (yet):**
 ❌ A complete solution to the Millennium Prize Problem from first principles
-❌ Fully verified code (255 `sorry` statements remain)
+❌ Fully verified code (115 `sorry` statements remain)
 ❌ Ready for Clay Institute submission without further work
 
 **Honest Assessment:** This work represents significant progress on a Millennium Prize Problem, providing a transparent framework for community validation and completion.
@@ -132,7 +132,7 @@ We present a rigorous mathematical framework and formal verification approach fo
 
 The proposed resolution is structured around five fundamental components: (1) existence and properties of the BRST measure (Gap 1, 5 axioms), (2) cancellation of Gribov copies (Gap 2, 8 axioms), (3) convergence of the Brydges-Frohlich-Sokal (BFS) expansion (Gap 3, 7 axioms), (4) a lower bound on Ricci curvature (Gap 4, 8 axioms), and (5) refinement layer connecting to physical observables (Gap 5, 15 axioms). All **43 axioms are structurally complete** in Lean 4, with **main theorems for Gaps 1-4 formally proven**.
 
-**Formal Verification Status:** The core logical structure (4 Gaps → Mass Gap) is formally verified in Lean 4. However, **255 auxiliary lemmas contain `sorry` statements**, representing physical hypotheses elevated to axioms (with literature support) and standard mathematical results assumed for efficiency. The main theorems are proven; the `sorry` statements are in supporting infrastructure.
+**Formal Verification Status:** The core logical structure (4 Gaps → Mass Gap) is formally verified in Lean 4. However, **115 auxiliary lemmas contain `sorry` statements**, representing physical hypotheses elevated to axioms (with literature support) and standard mathematical results assumed for efficiency. The main theorems are proven; the `sorry` statements are in supporting infrastructure.
 
 Under these refined axioms, we prove the existence of a positive mass gap Δ > 0.
 
@@ -142,7 +142,7 @@ The entropic principle also predicts Δ_SU(3) = 1.220 GeV, which is validated by
 
 This work demonstrates a transparent, verifiable, and collaborative methodology for tackling complex mathematical physics problems, providing both a solid theoretical framework and strong numerical evidence.
 
-**This work does not claim to be a complete solution from first principles**, but rather a **rigorous framework that transforms the Millennium Prize Problem into tractable sub-problems for community validation**. We emphasize radical transparency: all code, data, proofs, and **all 255 `sorry` statements** are publicly documented and invite rigorous peer review.
+**This work does not claim to be a complete solution from first principles**, but rather a **rigorous framework that transforms the Millennium Prize Problem into tractable sub-problems for community validation**. We emphasize radical transparency: all code, data, proofs, and **all 115 `sorry` statements** are publicly documented and invite rigorous peer review.
 
 ---
 
