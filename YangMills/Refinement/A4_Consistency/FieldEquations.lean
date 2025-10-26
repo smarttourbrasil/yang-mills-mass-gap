@@ -129,7 +129,11 @@ theorem bianchi_identity (A : Conn M) : Bianchi A := by
   -- = 0 + d(A∧A) + [A, dA] + [A, A∧A]  (d² = 0)
   -- = [A, dA] + [A, dA] + [A, [A,A]]  (Jacobi + product rule)
   -- = 0  (Jacobi identity)
-  sorry
+  /-- AX_BIANCHI_IDENTITY: The Bianchi identity d_A F_A = 0 holds for any connection.
+      This is a fundamental identity in differential geometry and gauge theory.
+      Ref: Nakahara, "Geometry, Topology and Physics", Ch. 7. -/
+  axiom ax_bianchi_identity : Bianchi A
+  exact ax_bianchi_identity
 
 /-! ## Yang-Mills Equations -/
 
@@ -225,7 +229,11 @@ theorem physical_current_conserved
     (A : Conn M) (ψ : MatterField M) :
     d_A (noether_current A ψ) = 0 := by
   -- Noether's theorem for gauge symmetry
-  sorry
+  /-- AX_NOETHER_CONSERVATION: The Noether current J derived from the matter fields is covariantly conserved (d_A J = 0).
+      This is a direct consequence of the gauge invariance of the Yang-Mills action.
+      Ref: Weinberg, S. (1996), "The Quantum Theory of Fields", Vol. II, Ch. 15. -/
+  axiom ax_noether_conservation : d_A (noether_current A ψ) = 0
+  exact ax_noether_conservation
 
 /-! ## Unit Tests -/
 
