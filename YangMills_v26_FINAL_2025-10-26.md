@@ -4,7 +4,7 @@
 
 **A Complete Framework with 43 Axioms, Automated Proof Strategies, and Roadmap to Full Verification**
 
-**Version 25 FINAL** | October 25, 2025
+**Version 26 FINAL** | October 26, 2025
 
 **Authors:**
 - **Jucelha Carvalho** [![ORCID](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0009-0004-6047-2306) (Lead Researcher & Coordinator, Smart Tour Brasil LTDA)
@@ -19,7 +19,7 @@
 **Zenodo DOI**: https://doi.org/10.5281/zenodo.17397623
 **ORCID (Jucelha Carvalho)**: https://orcid.org/0009-0004-6047-2306
 
-**Date:** October 25, 2025
+**Date:** October 26, 2025
 
 ---
 
