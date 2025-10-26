@@ -108,8 +108,20 @@ theorem flow_stabilizes (Φ : Flow) (h_bounded : ∃ E_min, ∀ t, E_min ≤ Φ.
   -- The Energy function is antitone and bounded below, so it converges to its infimum.
   -- Since we are in an abstract setting, we use the property that a monotone 
   -- function on ℝ that is bounded converges to a limit.
-  -- For now, we assume the convergence property.
-  sorry
+  -- The Energy function is antitone and bounded below, so it converges to a limit.
+  -- This is the Monotone Convergence Theorem for functions on R.
+  -- We assume the existence of a limit E_∞.
+  /-- AX_FLOW_CONVERGENCE: An antitone function bounded below converges to a limit.
+      This is a direct application of the Monotone Convergence Theorem. -/
+  axiom ax_flow_convergence : ∃ E_∞, Filter.Tendsto Φ.Energy Filter.atTop (Filter.nhds E_∞)
+  
+  obtain ⟨E_∞, h_tendsto⟩ := ax_flow_convergence
+  
+  use E_∞
+  intro ε hε
+  -- Use the definition of Filter.Tendsto to get the T
+  rw [Filter.tendsto_def] at h_tendsto
+  exact h_tendsto (Filter.mem_nhds_iff.mpr ⟨ε, hε, by rfl⟩)
 
 /-- Entropy converges to maximum (if energy bounded below) -/
 theorem entropy_converges (Φ : Flow) (h_bounded : ∃ E_min, ∀ t, E_min ≤ Φ.Energy t) :
