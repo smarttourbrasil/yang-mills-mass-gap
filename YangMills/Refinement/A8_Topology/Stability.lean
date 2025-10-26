@@ -71,7 +71,17 @@ lemma preconnected_discrete_is_singleton
     have h_sep : s ⊆ {a} ∪ {x}ᶜ ∨ s ⊆ {a}ᶜ ∪ {x} := by
       rfl -- Technical: from preconnected + discrete
     -- This contradicts preconnectedness
-    exact isPreconnected_iff_pair.mp hs hx h_neq (by sorry) (by sorry) (by sorry) (by sorry)
+    have h_sep : s = ({a} ∩ s) ∪ ({a}ᶜ ∩ s) := by simp
+    have h_disj : Disjoint ({a} ∩ s) ({a}ᶜ ∩ s) := by simp
+    have h_nonempty : ({a} ∩ s).Nonempty ∧ ({a}ᶜ ∩ s).Nonempty := by
+      constructor
+      · exact ⟨a, ha, by simp⟩
+      · exact ⟨x, hx, by simp [h_neq]⟩
+    have h_clopen : IsClopen ({a} ∩ s) ∧ IsClopen ({a}ᶜ ∩ s) := by
+      constructor
+      · exact isClopen_discrete ({a} ∩ s)
+      · exact isClopen_discrete ({a}ᶜ ∩ s)
+    exact isPreconnected_iff_clopen_decomposition.mp hs h_sep h_disj h_nonempty h_clopen.1
   · intro hx
     simp at hx
     rw [hx]
