@@ -6,7 +6,7 @@
 
 ## 📄 Latest Version
 
-**v25 (2025-10-25)** (October 25, 2025): [Markdown](YangMills_v24_2025-10-23.md) | [PDF](YangMills_v24_2025-10-23.pdf)
+**v26 (2025-10-26)** (October 26, 2025): [Markdown](YangMills_v26_FINAL_2025-10-26.md) | [PDF](YangMills_v26_FINAL_2025-10-26.pdf)
 
 ### What's New in v24
 
