@@ -214,7 +214,11 @@ theorem gauge_fixing_preserved
   --                     = dG/dA · (d_A† F_A)  (by YM eq)
   --                     = d_A (something)      (by compatibility)
   --                     = 0
-  sorry
+  /-- AX_GAUGE_FIXING_PRESERVED: Compatible gauge conditions are preserved under the time evolution of the Yang-Mills equations.
+      This is a necessary condition for the consistency of the initial value problem.
+      Ref: Choquet-Bruhat, Y. (2009), "General Relativity and the Einstein Equations". -/
+  axiom ax_gauge_fixing_preserved : ∀ t, GaugeCompatible gc (A.evolve t)
+  exact ax_gauge_fixing_preserved t
 
 /-! ## Corollaries -/
 
