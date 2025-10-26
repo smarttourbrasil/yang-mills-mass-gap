@@ -10,7 +10,7 @@
 
 ### What's New in v24
 
-- ✅ **Radical transparency**: All 115 `sorry` statements documented
+- ✅ **Radical transparency**: All 91 `sorry` statements documented
 - ✅ **43/43 axioms structurally complete**
 - ✅ **Main theorems proven**: Gaps 1-4 formally verified
 - ✅ **Honest assessment**: Framework complete, auxiliary lemmas in progress
@@ -32,9 +32,9 @@
 
 | Category | Count | Status |
 |----------|-------|--------|
-| Refinement Layer | 51 | Auxiliary lemmas (physical hypotheses) |
+| Refinement Layer | 27 | Auxiliary lemmas (physical hypotheses) |
 | Support Infrastructure | 64 | Standard mathematical tools |
-| **Total** | **115** | **Ongoing work** |
+| **TTotal | **91** | **Ongoing work** ||
 **Note:** The main logical chain (4 Gaps → Mass Gap) is formally verified. The `sorry` statements represent physical hypotheses elevated to axioms (with literature support) and standard mathematical results assumed for efficiency.
 
 ## 📊 What This Is (And Isn't)
@@ -48,7 +48,7 @@
 
 ### **This is NOT (yet):**
 ❌ A complete solution to the Millennium Prize Problem from first principles  
-❌ Fully verified code (115 `sorry` statements remain)  
+❌ Fully verified code (91 `sorry` statements remain)  
 ❌ Ready for Clay Institute submission without further work  
 
 **Honest Assessment:** This work represents significant progress on a Millennium Prize Problem, providing a transparent framework for community validation and completion.
@@ -77,7 +77,7 @@
 4. **Main theorems**: Formally proven (Gaps 1-4) ✅
 5. **Computational validation**: 94-96% agreement ✅
 6. **Consensus Framework**: Multi-agent AI collaboration with radical transparency ✅
-7. **Auxiliary lemmas: 115 `sorry` statements documented and categorized 🟡
+7. **Auxiliary lemmas: 91 `sorry` statements documented and categorized 🟡
 
 ## 🎯 Formal Verification Status
 
@@ -125,7 +125,7 @@ lake build YangMills.Gap4.RicciLimit
 
 ## 🤝 Contributing
 
-We welcome contributions to eliminate the 115 `sorry` statements! See [CONTRIBUTING.md](CONTRIBUTING.md) for:
+We welcome contributions to eliminate the 91 `sorry` statements! See [CONTRIBUTING.md](CONTRIBUTING.md) for:
 
 - How to categorize `sorry` by difficulty
 - Prioritized roadmap for elimination
@@ -150,6 +150,6 @@ This work was developed using the **Consensus Framework**, a novel methodology f
 
 ---
 
-**Radical Transparency:** All code, data, proofs, and **all 115 `sorry` statements** are publicly documented. We invite rigorous peer review and community collaboration.
+**Radical Transparency:** All code, data, proofs, and **all 91 `sorry` statements** are publicly documented. We invite rigorous peer review and community collaboration.
 
 **Honest Assessment:** Significant progress on a Millennium Prize Problem, not yet a complete solution.
