@@ -90,8 +90,10 @@ structure Quartet (C : BRSTComplex) (n : ℤ) where
 
 /-- Quartet decomposition hypothesis -/
 structure HasQuartetDecomp (C : BRSTComplex) : Prop where
-  /-- For each n > 0, space decomposes into quartets -/
-  decomp : ∀ n > 0, ∃ (physical : Submodule ℝ (C.obj n))
+  /-- AX_BRST_QUARTET_DECOMPOSITION: The space of states decomposes into a physical subspace and a quartet subspace for n > 0.
+      This is the core physical hypothesis of the Kugo-Ojima mechanism.
+      Ref: Kugo–Ojima (1979), "Local covariant operator formalism", Section 3. -/
+  ax_brst_quartet_decomposition : ∀ n > 0, ∃ (physical : Submodule ℝ (C.obj n))
                       (quartets : Finset (Quartet C n)),
     C.obj n ≃ₗ[ℝ] physical ⊕ (⨁ q ∈ quartets, ℝ)
 
