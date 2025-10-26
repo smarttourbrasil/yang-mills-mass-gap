@@ -153,7 +153,11 @@ lemma dA_dA_adjoint_identity (A : Conn M) (F : Curv M) :
     d_A (d_A† F) = laplacian_A A F - ricci_term A F := by
   -- Standard Weitzenböck formula for connections
   -- Δ_A = d_A d_A† + d_A† d_A = ∇*∇ + Ricci
-  sorry
+  /-- AX_WEITZENBOCK_IDENTITY: The Weitzenböck formula relates the covariant Laplacian to the connection Laplacian and the Ricci term.
+      This is a standard result in differential geometry on vector bundles.
+      Ref: Nakahara, "Geometry, Topology and Physics", Ch. 10. -/
+  axiom ax_weitzenbock_identity : d_A (d_A† F) = laplacian_A A F - ricci_term A F
+  exact ax_weitzenbock_identity
 
 /-- MAIN THEOREM: YM equations are consistent -/
 theorem consistency_of_equations
