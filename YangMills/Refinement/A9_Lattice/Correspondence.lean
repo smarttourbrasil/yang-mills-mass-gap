@@ -98,8 +98,8 @@ structure LipschitzFunctional where
   F : (ℝ → ℝ) → ℝ
   /-- Lipschitz constant -/
   K : ℝ
-  /-- Lipschitz property -/
-  lip : ∀ f g, (∀ x, |f x - g x| ≤ 1) → |F f - F g| ≤ K
+  /-- Lipschitz property (general form) -/
+  lip : ∀ f g, |F f - F g| ≤ K * ‖f - g‖_∞
 
 /-! ## Convergence -/
 
@@ -145,19 +145,18 @@ theorem lattice_to_continuum
   
   -- Show functional values are close
   have h_lip : |F.F (sample (fam.L a)) - F.F C.A_cont| ≤ F.K * uniformNorm (sample (fam.L a)) C.A_cont := by
-    -- This requires a slightly more general Lipschitz definition:
-    -- |F f - F g| ≤ K * ‖f - g‖_∞
-    -- Since we only have the simplified definition (line 102), we assume the general one.
-    -- For now, we use the fact that if ‖f - g‖_∞ < ε/K, then |F f - F g| < ε
-    sorry
+    -- The general Lipschitz definition is now in F.lip
+    exact F.lip (sample (fam.L a)) C.A_cont
   
   -- We use the property that if ‖f - g‖_∞ < ε/K, then |F f - F g| < ε
   intro a ha
   have h_close_a := h_close a ha.2
   have h_lip_apply : |F.F (sample (fam.L a)) - F.F C.A_cont| < ε := by
-    -- This is a logical step from the Lipschitz property:
-    -- |Ff - Fg| ≤ K * ‖f - g‖_∞ < K * (ε/K) = ε
-    sorry
+    -- Proof: |Ff - Fg| ≤ K * ‖f - g‖_∞ < K * (ε/K) = ε
+    calc |F.F (sample (fam.L a)) - F.F C.A_cont|
+      _ ≤ F.K * uniformNorm (sample (fam.L a)) C.A_cont := F.lip _ _
+      _ < F.K * (ε / F.K) := by gcongr
+      _ = ε := by field_simp [hε.ne']
   exact h_lip_apply
 
 /-- Corollary: Observables converge -/
