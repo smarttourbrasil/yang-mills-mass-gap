@@ -34,8 +34,7 @@
 |----------|-------|--------|
 | Refinement Layer | 51 | Auxiliary lemmas (physical hypotheses) |
 | Support Infrastructure | 64 | Standard mathematical tools |
-| **Total | **115** | **Ongoing work** |
-
+| **Total** | **115** | **Ongoing work** |
 **Note:** The main logical chain (4 Gaps → Mass Gap) is formally verified. The `sorry` statements represent physical hypotheses elevated to axioms (with literature support) and standard mathematical results assumed for efficiency.
 
 ## 📊 What This Is (And Isn't)
@@ -92,7 +91,6 @@
 ### Auxiliary Lemmas (Contains `sorry`):
 - 🟡 Refinement Layer: 51 `sorry` (physical hypotheses)
 - 🟡 Support Infrastructure: 64 `sorry` (standard math)
-- 🟡 **Total: 115 `sorry` statements**
 
 **Roadmap:** Community collaboration welcome to eliminate `sorry` statements. See [CONTRIBUTING.md](CONTRIBUTING.md).
 
