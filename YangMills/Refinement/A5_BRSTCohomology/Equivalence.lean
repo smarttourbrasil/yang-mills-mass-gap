@@ -174,10 +174,19 @@ theorem vanishing_positive_degrees
     use ch.h n ω
     -- From homotopy identity: ω = Q(h ω) + h(Q ω) = Q(h ω) + h(0) = Q(h ω)
     have h_id := ch.identity n hn
-    sorry
+    rw [LinearMap.comp_apply] at h_id
+    rw [LinearMap.comp_apply] at h_id
+    rw [h_id]
+    rw [hω]
+    rw [LinearMap.map_zero]
+    simp only [LinearMap.add_apply, LinearMap.id_apply, add_zero] at h_id
+    exact h_id.symm
   
   -- Therefore ker(Q) ⊆ im(Q), so H = ker/im = 0
-  sorry
+  apply LinearMap.quotient_ker_eq_zero.mpr
+  intro x hx
+  let ⟨η, hη⟩ := h_exact x hx
+  exact LinearMap.mem_range.mpr ⟨η, hη⟩
 
 /-! ## Equivalence Statement -/
 
