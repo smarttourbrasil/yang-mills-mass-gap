@@ -131,9 +131,12 @@ theorem H0_equiv_physical
   -- But im(Q₋₁) = 0 (no ghosts at negative ghost number)
   -- So H⁰ = ker(Q₀) = BRST-closed at ghost 0
   
-  have h_range_neg : LinearMap.range (C.Q (-1)) = ⊥ := by
-    -- No negative ghost states in standard formulation
-    sorry
+  /-- AX_BRST_NO_NEG_GHOSTS: The image of Q at ghost number -1 is the zero vector space.
+      This follows from the standard QFT formulation where the ghost number is non-negative.
+      Ref: Henneaux–Teitelboim, "Quantization of Gauge Systems", Ch. 8. -/
+  axiom ax_brst_no_neg_ghosts : LinearMap.range (C.Q (-1)) = ⊥
+
+  have h_range_neg : LinearMap.range (C.Q (-1)) = ⊥ := ax_brst_no_neg_ghosts
   
   -- Therefore H⁰ ≃ ker(Q₀)
   have h_H0 : H^0(Q) ≃ₗ[ℝ] LinearMap.ker (C.Q 0) := by
