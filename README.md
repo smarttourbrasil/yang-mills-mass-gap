@@ -53,6 +53,12 @@
 
 **Honest Assessment:** This work represents significant progress on a Millennium Prize Problem, providing a transparent framework for community validation and completion.
 
+## 📜 Controle Editorial do Artigo
+
+O arquivo fonte do artigo (`.md`) é mantido pela autora principal. Sugestões de correções (typos, referências) são bem-vindas via **Issues**, mas as alterações são controladas.
+
+Para contribuições de código (eliminação de `sorry`s), o foco deve ser nos arquivos Lean 4 (`YangMills/*.lean`).
+
 ## 🔗 Links
 
 - **Code Repository**: https://github.com/smarttourbrasil/yang-mills-mass-gap
