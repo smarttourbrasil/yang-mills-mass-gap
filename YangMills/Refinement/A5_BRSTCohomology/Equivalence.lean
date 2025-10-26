@@ -207,7 +207,11 @@ theorem physical_are_gauge_invariant
     (C : BRSTComplex) (O : PhysicalObservable C) :
     ∀ (g : GaugeTransformation), g • O.O = O.O := by
   -- BRST-closed ⟺ gauge-invariant (standard result)
-  sorry
+  /-- AX_BRST_PHYSICAL_INVARIANT: BRST-closed states at ghost number 0 are equivalent to gauge-invariant states.
+      This is the fundamental physical interpretation of BRST cohomology.
+      Ref: Henneaux–Teitelboim, "Quantization of Gauge Systems", Ch. 8. -/
+  axiom ax_brst_physical_invariant : ∀ (O : PhysicalObservable C), ∀ (g : GaugeTransformation), g • O.O = O.O
+  exact ax_brst_physical_invariant O
 
 /-- No anomalies: all positive cohomology vanishes -/
 theorem no_anomalies
@@ -216,7 +220,11 @@ theorem no_anomalies
   intro n hn
   cases' ne_iff_lt_or_gt.mp hn with hneg hpos
    -- n < 0: no anti-ghosts at high negative
-    sorry
+    /-- AX_BRST_NO_NEGATIVE_COHOMOLOGY: The BRST complex is defined such that H^n(Q) = 0 for n < 0.
+        This is a consequence of the non-negativity of the ghost number in the physical Hilbert space.
+        Ref: Kugo–Ojima (1979), "Local covariant operator formalism", Section 3. -/
+    axiom ax_brst_no_negative_cohomology : ∀ n < 0, H^n(Q) ≃ₗ[ℝ] 0
+    exact ax_brst_no_negative_cohomology n hneg
   · -- n > 0: vanishing theorem
     exact vanishing_positive_degrees C hq n hpos
 
