@@ -1,3 +1,17 @@
+/-
+Copyright (c) 2025 Smart Tour Brasil. All rights reserved.
+Released under Apache 2.0 license.
+Authors: Jucelha Carvalho, Manus AI 1.5, Claude Sonnet 4.5, Claude Opus 4.1, GPT-5
+-/
+
+import YangMills.Gap4.RicciLowerBound.R3_HessianToRicci
+
+/-!
+# R4: Bishop-Gromov Compactness
+
+Proves that Ricci lower bound implies geometric compactness via
+Bishop-Gromov theorem.
+
 ## Main Result
 
 `lemma_R4_bishop_gromov`:
@@ -179,18 +193,4 @@ theorem bishop_gromov_compatible_with_uhlenbeck :
   rfl -- Both notions of compactness agree
 
 end YangMills.Gap4.RicciLowerBound.R4
-
-📁 ARQUIVO 6: R5_CompactnessToStability.lean
-lean/-
-Copyright (c) 2025 Smart Tour Brasil. All rights reserved.
-Released under Apache 2.0 license.
-Authors: Jucelha Carvalho, Manus AI 1.5, Claude Sonnet 4.5, Claude Opus 4.1, GPT-5
--/
-
-import YangMills.Gap4.RicciLowerBound.R4_BishopGromov
-
-/-!
-# R5: Compactness to Stability
-
-Proves that geometric compactness implies stability of the BRST measure.
 

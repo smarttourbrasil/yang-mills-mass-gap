@@ -1,3 +1,16 @@
+/-
+Copyright (c) 2025 Smart Tour Brasil. All rights reserved.
+Released under Apache 2.0 license.
+Authors: Jucelha Carvalho, Manus AI 1.5, Claude Sonnet 4.5, Claude Opus 4.1, GPT-5
+-/
+
+import YangMills.Gap4.RicciLowerBound.R2_HessianLowerBound
+
+/-!
+# R3: Hessian to Ricci
+
+Proves that Hessian lower bound implies Ricci lower bound on moduli space.
+
 ## Main Result
 
 `lemma_R3_hessian_to_ricci`:
@@ -189,19 +202,4 @@ theorem lemma_R3_hessian_to_ricci (A_G : ModuliSpace M N) :
   sorry -- Technical: collect constants C = C₁ + C_T + C_vert
 
 end YangMills.Gap4.RicciLowerBound.R3
-
-📁 ARQUIVO 5: R4_BishopGromov.lean
-lean/-
-Copyright (c) 2025 Smart Tour Brasil. All rights reserved.
-Released under Apache 2.0 license.
-Authors: Jucelha Carvalho, Manus AI 1.5, Claude Sonnet 4.5, Claude Opus 4.1, GPT-5
--/
-
-import YangMills.Gap4.RicciLowerBound.R3_HessianToRicci
-
-/-!
-# R4: Bishop-Gromov Compactness
-
-Proves that Ricci lower bound implies geometric compactness via
-Bishop-Gromov theorem.
 

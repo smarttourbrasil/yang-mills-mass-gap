@@ -1,3 +1,17 @@
+/-
+Copyright (c) 2025 Smart Tour Brasil. All rights reserved.
+Released under Apache 2.0 license.
+Authors: Jucelha Carvalho, Manus AI 1.5, Claude Sonnet 4.5, Claude Opus 4.1, GPT-5
+-/
+
+import YangMills.Gap4.RicciLowerBound.R1_RicciWellDefined
+
+/-!
+# R2: Hessian Lower Bound
+
+Proves that the Hessian of the Yang-Mills functional is bounded below
+on stable connections.
+
 ## Main Result
 
 `lemma_R2_hessian_lower_bound`:
@@ -198,18 +212,4 @@ theorem asd_connections_stable (A : Connection M N P) (h_asd : IsAntiSelfDual A)
   sorry -- For ASD, can improve to λ_min = 0
 
 end YangMills.Gap4.RicciLowerBound.R2
-
-📁 ARQUIVO 4: R3_HessianToRicci.lean
-lean/-
-Copyright (c) 2025 Smart Tour Brasil. All rights reserved.
-Released under Apache 2.0 license.
-Authors: Jucelha Carvalho, Manus AI 1.5, Claude Sonnet 4.5, Claude Opus 4.1, GPT-5
--/
-
-import YangMills.Gap4.RicciLowerBound.R2_HessianLowerBound
-
-/-!
-# R3: Hessian to Ricci
-
-Proves that Hessian lower bound implies Ricci lower bound on moduli space.
 
