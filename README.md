@@ -10,7 +10,7 @@
 
 ### What's New in v24
 
-- ✅ **Radical transparency**: All 91 `sorry` statements documented
+- ✅ **Radical transparency**: All 105 `sorry` statements documented
 - ✅ **43/43 axioms structurally complete**
 - ✅ **Main theorems proven**: Gaps 1-4 formally verified
 - ✅ **Honest assessment**: Framework complete, auxiliary lemmas in progress
