@@ -32,6 +32,26 @@ import Mathlib.Analysis.InnerProductSpace.Basic
 /-- A gauge connection on a principal bundle -/
 structure Connection (G : Type*) where
   field : ℝ → ℝ  -- Simplified representation
+
+/-- Campo fantasma (ghost) idealizado. -/
+structure GhostField where
+  field : ℝ → ℝ
+
+/-- Fantasma “padrão” para varrer as variações BRST. -/
+noncomputable def c_ideal : GhostField :=
+  { field := fun _ => 1 }  -- constante 1 como perfil mínimo
+
+/-- Derivada covariante idealizada: D_A c. -/
+opaque covariant_derivative {G : Type*} :
+  Connection G → GhostField → Connection G
+
+/-- Conexão nula (útil para enunciados como Q² A = 0). -/
+def zero_connection {G : Type*} : Connection G :=
+  { field := fun _ => 0 }
+
+/-- (Opcional) Nilpotência do BRST na camada idealizada: Q² = 0. -/
+axiom brst_nilpotent {G : Type*} (A : Connection G) :
+  BRST_operator (BRST_operator A) = zero_connection
   
 /-- The space of gauge transformations -/
 structure GaugeTransformation where
@@ -41,17 +61,24 @@ structure GaugeTransformation where
 noncomputable def chern_number {G : Type*} (A : Connection G) : ℤ :=
 -- Full definition requires integration over manifold (Chern-Simons form)
 	sorry
+/-- Divergence of the connection (Landau Gauge condition) -/
+noncomputable def divergence {G : Type*} (A : Connection G) : ℝ := sorry
+
+/-- Idealized integral operator for the simplified field space (ℝ → ℝ) -/
+noncomputable def idealized_integral (f : ℝ → ℝ) : ℝ := sorry
 
 /-- BRST operator acting on connections -/
 noncomputable def BRST_operator {G : Type*} (A : Connection G) : Connection G :=
--- Full BRST transformation Q(A) = D_A c + ...
-	sorry
+  covariant_derivative A c_ideal
 
 /-- Inner product on connection space -/
 noncomputable def connection_inner_product {G : Type*} 
   (A B : Connection G) : ℝ :=
--- Requires integration: ∫ Tr(A ∧ *B) (L² inner product)
-	sorry
+-- L² inner product: ∫ A(x) * B(x) dx
+	idealized_integral (fun x => A.field x * B.field x)
+/-- Action of a gauge transformation g on a connection A -/
+noncomputable def gauge_action {G : Type*} (g : GaugeTransformation) (A : Connection G) : Connection G := 
+  { field := fun x => A.field x + g.map x }
 
 /-! ## Gribov Copies -/
 
@@ -61,12 +88,11 @@ def is_gribov_copy {G : Type*} (A : Connection G) : Prop :=
   ∃ (A' : Connection G) (g : GaugeTransformation),
     A ≠ A' ∧ 
     -- Both satisfy Landau gauge: ∂_μ A^μ = 0
-(∀ μ, sorry) ∧
+(divergence A = 0 ∧ divergence A' = 0) ∧
 -- Related by gauge transformation
-	  sorry
+	  A' = gauge_action g A
     -- Related by gauge transformation
-    -- Full proof requires the topological pairing to imply the cancellation
-  sorry
+
 
 /-! ## Main Conjecture (Insight #1) -/
 
