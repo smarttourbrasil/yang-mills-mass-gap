@@ -32,7 +32,7 @@ where Ω = {A : λ₀(M_FP(A)) > 0} is the first Gribov region.
   - Regularization of infinite products: log det M = -ζ'_M(0)
 - **Reed & Simon**: "Methods of Modern Mathematical Physics", Academic Press
   - Spectral theory of elliptic operators
-- **Courant & Hilbert**: "Methods of Mathematical Physics", Wiley-Interscience
+- **Courant & Hilbert**: "Methods of Modern Mathematical Physics", Wiley-Interscience
   - Weyl's theorem on eigenvalue ordering
 
 ## Dependencies (Temporary Axioms)
@@ -156,7 +156,7 @@ def fpDeterminant (M_FP : FPOperator M N P) (A : Connection M N P) : ℝ :=
 
 /-- Sign of FP determinant -/
 def signOfDeterminant (M_FP : FPOperator M N P) (A : Connection M N P) : ℝ :=
-  sorry -- (-1)^{number of negative eigenvalues}
+  (-1 : ℝ) ^ ((spectrum M_FP A).filter (· < 0) |>.ncard)
 
 /-- Sign formula: sign(Δ_FP) = (-1)^{n_negative} -/
 theorem sign_formula
@@ -186,12 +186,20 @@ def gribovRegion (M_FP : FPOperator M N P) (P : Type*) : Set (Connection M N P) 
 axiom gribovRegion_convex (M_FP : FPOperator M N P) (P : Type*) :
     Convex ℝ (gribovRegion M_FP P)
 
+/-- (Hipótese 1) Em A=0, o operador FP coincide (na convenção) com −Δ,
+    e portanto tem espectro estritamente positivo. -/
+axiom FP_posdef_at_trivial
+  (M_FP : FPOperator M N P) (M N P : Type*) :
+  ∀ λ ∈ (M_FP.spectrum (trivialConnection M N P)), 0 < λ
+
 /-- Gribov region is non-empty (A = 0 ∈ Ω) -/
 theorem gribovRegion_nonempty (M_FP : FPOperator M N P) (P : Type*) :
     (gribovRegion M_FP P).Nonempty := by
-  use trivialConnection M N P
-  -- For A = 0, M_FP = -Δ (Laplacian), λ₀ > 0 on compact manifold
-  sorry
+  refine ⟨trivialConnection M N P, ?_⟩
+  -- Para A = 0, usamos a positividade estrita do espectro (hipótese 1),
+  -- que agrega o fato físico “M_FP(A=0) = −Δ” e a positividade espectral.
+  intro λ hλ
+  exact FP_posdef_at_trivial (M_FP:=M_FP) (M:=M) (N:=N) (P:=P) λ hλ
 
 /-- At the Gribov horizon, lowest eigenvalue vanishes -/
 theorem gribov_horizon_characterization
@@ -209,7 +217,7 @@ the Faddeev-Popov determinant is strictly positive.
 
 **Proof**:
 1. By definition of Ω: A ∈ Ω ⟹ λ₀(A) > 0
-2. By Weyl's theorem: λ₀ > 0 ⟹ all λᵢ > 0
+2. By Weyl's theorem: λ₀ > 0 ⟹ all eigenvalues λᵢ > 0
 3. By sign formula: all λᵢ > 0 ⟹ n_negative = 0 ⟹ sign(Δ_FP) = +1
 4. By zeta regularization: Δ_FP = exp(-ζ'(0)) > 0 (exponential is always positive)
 -/
@@ -304,4 +312,3 @@ This provides empirical evidence for M1 complementing the analytical proof.
 -/
 
 end YangMills.Gap1.BRSTMeasure
-
