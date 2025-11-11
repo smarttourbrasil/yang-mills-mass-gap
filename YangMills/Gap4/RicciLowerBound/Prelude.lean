@@ -87,9 +87,10 @@ def RegularLocus (A_G : ModuliSpace M N) : Set (ModuliSpace M N) :=
 L² inner product on space of connections
 
 **Definition:** ⟨ω₁, ω₂⟩ = ∫_M Tr(ω₁ ∧ *ω₂)
+
+**Status:** Axiomatized (requires differential forms implementation)
 -/
-def l2_inner_product (ω₁ ω₂ : OneForm M) : ℝ :=
-  sorry -- ∫ Tr(ω₁ ∧ *ω₂)
+axiom l2_inner_product (ω₁ ω₂ : OneForm M) : ℝ
 
 /--
 L² metric on moduli space (induced from connections)

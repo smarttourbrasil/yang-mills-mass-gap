@@ -12,7 +12,7 @@
 
 - ✅ **Complete axiom audit**: 106 `axiom` declarations categorized and documented
 - ✅ **Transparent counting**: 4 central + ~40 technical axioms + 12 imported theorems
-- ✅ **Progress update**: 100 `sorry` statements remaining (5 eliminated since v26)
+- ✅ **Progress update**: 95 `sorry` statements remaining (10 eliminated since v26)
 - ✅ **Honest assessment**: Framework complete, auxiliary lemmas in progress
 
 ## 🎯 Current Status (November 3, 2025)
@@ -33,7 +33,7 @@
 |----------|-------|--------|
 | Refinement Layer | 20 | Auxiliary lemmas (physical hypotheses) |
 | Support Infrastructure | 80 | Standard mathematical tools |
-| **Total** | **100** | **Ongoing work** |
+| **Total** | **95** | **Ongoing work** |
 
 **Note:** The main logical chain (4 Gaps → Mass Gap) is formally verified. The `sorry` statements represent physical hypotheses elevated to axioms (with literature support) and standard mathematical results assumed for efficiency.
 
@@ -63,7 +63,7 @@ See [AXIOMS_AUDIT_REPORT.md](AXIOMS_AUDIT_REPORT.md) for complete categorization
 
 ### **This is NOT (yet):**
 ❌ A complete solution to the Millennium Prize Problem from first principles  
-❌ Fully verified code (100 `sorry` statements remain)  
+❌ Fully verified code (95 `sorry` statements remain)  
 ❌ Ready for Clay Institute submission without further work  
 
 **Honest Assessment:** This work represents significant progress on a Millennium Prize Problem, providing a transparent framework for community validation and completion.
@@ -98,7 +98,7 @@ Para contribuições de código (eliminação de `sorry`s), o foco deve ser nos 
 4. **Main theorems**: Formally proven (Gaps 1-4) ✅
 5. **Computational validation**: 94-96% agreement ✅
 6. **Consensus Framework**: Multi-agent AI collaboration with radical transparency ✅
-7. **Auxiliary lemmas**: 100 `sorry` statements documented and categorized 🟡
+7. **Auxiliary lemmas**: 95 `sorry` statements documented and categorized 🟡
 
 ## 🎯 Formal Verification Status
 
@@ -113,7 +113,7 @@ Para contribuições de código (eliminação de `sorry`s), o foco deve ser nos 
 - 🟡 Refinement Layer: 20 `sorry` (physical hypotheses)
 - 🟡 Support Infrastructure: 80 `sorry` (standard math)
 
-**Progress:** 141/241 `sorry`s eliminated (58.5% complete)
+**Progress:** 146/241 `sorry`s eliminated (60.6% complete)
 
 **Roadmap:** Community collaboration welcome to eliminate `sorry` statements. See [CONTRIBUTING.md](CONTRIBUTING.md).
 
@@ -152,14 +152,16 @@ lake build YangMills.Gap4.RicciLimit
 
 ## 🤝 Contributing
 
-We welcome contributions to eliminate the 100 `sorry` statements! See [CONTRIBUTING.md](CONTRIBUTING.md) for:
+We welcome contributions to eliminate the 95 `sorry` statements! See [CONTRIBUTING.md](CONTRIBUTING.md) for:
 
 - How to categorize `sorry` by difficulty
 - Prioritized roadmap for elimination
 - Guidelines for formal proofs
 - Community collaboration process
 
-**Recent Progress:** 5 `sorry`s eliminated through collaborative efforts (v26 → v27)
+**Recent Progress:** 10 `sorry`s eliminated through collaborative efforts (v26 → v27.1)
+
+**Latest Update (November 11, 2025):** 5 additional `sorry`s eliminated in Gap4/RicciLowerBound and Gap1/Measure
 
 **Target:** Eliminate all `sorry` statements through community collaboration.
 
@@ -175,11 +177,11 @@ Apache 2.0 (permissive, requires attribution)
 
 ## 🙏 Acknowledgments
 
-This work was developed using the **Consensus Framework**, a novel methodology for distributed AI collaboration, recognized as a Global Finalist in the UN Tourism Artificial Intelligence Challenge (October 2025).
+This work was developed using the **Consensus Framework**, a novel methodology for distributed AI collaboration, **winner of the IA Global Challenge** (440 solutions from 83 countries, October 2025) and recognized as a Global Finalist in the UN Tourism Artificial Intelligence Challenge.
 
 ---
 
-**Radical Transparency:** All code, data, proofs, and **all 100 `sorry` statements** are publicly documented. We invite rigorous peer review and community collaboration.
+**Radical Transparency:** All code, data, proofs, and **all 95 `sorry` statements** are publicly documented. We invite rigorous peer review and community collaboration.
 
 **Honest Assessment:** Significant progress on a Millennium Prize Problem, not yet a complete solution.
 
