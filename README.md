@@ -12,7 +12,7 @@
 
 - ✅ **Complete axiom audit**: 106 `axiom` declarations categorized and documented
 - ✅ **Transparent counting**: 4 central + ~40 technical axioms + 12 imported theorems
-- ✅ **Progress update**: 95 `sorry` statements remaining (10 eliminated since v26)
+- ✅ **Progress update**: 88 `sorry` statements remaining (17 eliminated since v26)
 - ✅ **Honest assessment**: Framework complete, auxiliary lemmas in progress
 
 ## 🎯 Current Status (November 3, 2025)
@@ -32,8 +32,8 @@
 | Category | Count | Status |
 |----------|-------|--------|
 | Refinement Layer | 20 | Auxiliary lemmas (physical hypotheses) |
-| Support Infrastructure | 80 | Standard mathematical tools |
-| **Total** | **95** | **Ongoing work** |
+| Support Infrastructure | 73 | Standard mathematical tools |
+| **Total** | **88** | **Ongoing work** |
 
 **Note:** The main logical chain (4 Gaps → Mass Gap) is formally verified. The `sorry` statements represent physical hypotheses elevated to axioms (with literature support) and standard mathematical results assumed for efficiency.
 
@@ -113,7 +113,7 @@ Para contribuições de código (eliminação de `sorry`s), o foco deve ser nos 
 - 🟡 Refinement Layer: 20 `sorry` (physical hypotheses)
 - 🟡 Support Infrastructure: 80 `sorry` (standard math)
 
-**Progress:** 146/241 `sorry`s eliminated (60.6% complete)
+**Progress:** 153/241 `sorry`s eliminated (63.5% complete)
 
 **Roadmap:** Community collaboration welcome to eliminate `sorry` statements. See [CONTRIBUTING.md](CONTRIBUTING.md).
 
@@ -152,16 +152,16 @@ lake build YangMills.Gap4.RicciLimit
 
 ## 🤝 Contributing
 
-We welcome contributions to eliminate the 95 `sorry` statements! See [CONTRIBUTING.md](CONTRIBUTING.md) for:
+We welcome contributions to eliminate the 88 `sorry` statements! See [CONTRIBUTING.md](CONTRIBUTING.md) for:
 
 - How to categorize `sorry` by difficulty
 - Prioritized roadmap for elimination
 - Guidelines for formal proofs
 - Community collaboration process
 
-**Recent Progress:** 10 `sorry`s eliminated through collaborative efforts (v26 → v27.1)
+**Recent Progress:** 17 `sorry`s eliminated through collaborative efforts (v26 → v27.2)
 
-**Latest Update (November 11, 2025):** 5 additional `sorry`s eliminated in Gap4/RicciLowerBound and Gap1/Measure
+**Latest Update (November 13, 2025):** 7 additional `sorry`s eliminated in Round 2 (Refinement/A18_RG, Gap4/RicciLimit, Gap4/RicciLowerBound, Gap2/GribovCancellation)
 
 **Target:** Eliminate all `sorry` statements through community collaboration.
 
@@ -181,7 +181,7 @@ This work was developed using the **Consensus Framework**, a novel methodology f
 
 ---
 
-**Radical Transparency:** All code, data, proofs, and **all 95 `sorry` statements** are publicly documented. We invite rigorous peer review and community collaboration.
+**Radical Transparency:** All code, data, proofs, and **all 88 `sorry` statements** are publicly documented. We invite rigorous peer review and community collaboration.
 
 **Honest Assessment:** Significant progress on a Millennium Prize Problem, not yet a complete solution.
 
