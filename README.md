@@ -77,7 +77,7 @@ Para contribuições de código (substituição de axiomas por provas), o foco d
 ## 🔗 Links
 
 - **Code Repository**: https://github.com/smarttourbrasil/yang-mills-mass-gap
-- **Zenodo DOI**: https://doi.org/10.5281/zenodo.17397623
+- **Zenodo DOI**: [https://doi.org/10.5281/zenodo.17397623](https://zenodo.org/records/17635382) 
 - **ORCID (Jucelha)**: https://orcid.org/0009-0004-6047-2306
 - **Contact**: jucelha@smarttourbrasil.com.br
 - **Contribute**: See [CONTRIBUTING.md](CONTRIBUTING.md) for how to help replace axioms with full proofs
