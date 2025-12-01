@@ -4,7 +4,7 @@
 
 **A Complete Framework with 43 Axioms, Automated Proof Strategies, and Roadmap to Full Verification**
 
-**Version 29.0 ENTROPIC (Paradigm Shift!)** | November 26, 2025
+**Version 29.0 ENTROPIC (Paradigm Shift!)** | December 1, 2025
 
 **Authors:**
 
@@ -30,7 +30,7 @@
 
 **ORCID (Jucelha Carvalho )**: [https://orcid.org/0009-0004-6047-2306](https://orcid.org/0009-0004-6047-2306)
 
-**Date:** November 26, 2025
+**Date:** December 1, 2025
 
 ---
 
@@ -51,7 +51,7 @@ This represents a major leap forward, transforming a critical anomaly into a pow
 
 ---
 
-## UPDATE (November 26, 2025): First Theorems Proven!
+## UPDATE (December 1, 2025): First Theorems Proven!
 
 In a significant step forward, the first set of theorems supporting the Entropic Mass Gap Principle have been formally proven in Lean 4, eliminating all `sorrys` from the core `EntropicPrinciple.lean` file.
 
