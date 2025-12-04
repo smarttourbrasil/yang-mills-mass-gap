@@ -237,12 +237,12 @@ theorem mass_gap_strong_coupling_consistency :
   unfold predicted_mass_gap experimental_mass_gap
   -- Goal is now: abs (1.206 - 1.22) / 1.22 < 0.02
   
-  -- Step 2: Use norm_num to compute and verify
+  -- Step 2: Simplify and use norm_num
   -- 1.206 - 1.22 = -0.014
-  -- abs(-0.014) = 0.014
+  -- abs(-0.014) = 0.014  
   -- 0.014 / 1.22 ≈ 0.01147...
   -- 0.01147 < 0.02 ✓
-  norm_num
+  norm_num [abs_of_neg]
   -- QED: The prediction agrees with experiment to within 1.15% ✓
 
 /--
